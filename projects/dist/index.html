@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Zet</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header id="start" class="header">
+            <div class="container">
+                <div class="header__header">
+                    <div class="logo">
+                        <a href="/">zet</a>
+                    </div>
+                    <div class="header__box">
+                        <span class="header__menu" id="menu-label">Menu</span>
+                        <button class="hamburger" aria-label="Main menu" aria-expanded="false">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>                    
+                    </div>
+                </div>
+                    <nav aria-labelledby="menu-label">
+                        <ul class="header__items">
+                            <li class="header__item">
+                                <a href="#start">start</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#service">service</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#works">works</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#happy-clients">happy clients</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#team">our team</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#partners">partners</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#pricing">pricing</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#contacts">contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                <div class="header__intro">
+                    <h1 class="header__title">Something Nothing</h1>
+                    <div class="header__descr">
+                        Enean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim iam ultricies nisi eleifend tellus.
+                    </div>
+                    <div class="modal__btn-wrapper">
+                        <a href="#ex1" rel="modal:open" class="btn btn--empty btn--modal" role="button">LET’S TALK</a>  
+                    </div>
+                </div>
+                <button class="header__scrolldown">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                        <g>
+                          <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <main class="main">
+            <section id="service" class="service">
+                <div class="container">
+                    <h2 class="title">SERVICES</h2>
+                    <p class="subtitle">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+                    <div class="strip"></div>
+                    <div class="service__box">
+                        <div class="service__item">
+                            <div class="service__eclipse">
+                                <img class="service__img" src="assets/img/laptop.png" alt="">
+                            </div>
+                            <h3 class="service__subtitle">FULLY RESPONSIVE</h3>
+                            <div class="service__descr">
+                                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</div>
+                        </div>
+                        <div class="service__item">
+                            <div class="service__eclipse">
+                                <img class="service__img" src="assets/img/adjust2.png" alt="">
+                            </div>
+                            <h3 class="service__subtitle">EASY CUSTOMIZE</h3>
+                            <div class="service__descr">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae.</div>                            
+                        </div>
+                        <div class="service__item">
+                            <div class="service__eclipse">
+                                <img class="service__img" src="assets/img/map.png" alt="">
+                            </div>
+                            <h3 class="service__subtitle">SEO READY</h3>
+                            <div class="service__descr">Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi</div>                            
+                        </div>
+                        <div class="service__item">
+                            <div class="service__eclipse">
+                                <img class="service__img" src="assets/img/heart.png" alt="">
+                            </div>
+                            <h3 class="service__subtitle">MADE WITH LOVE</h3>
+                            <div class="service__descr">ecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.
+                                vulputate eget, arcu.</div>                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="works" class="works">
+                <h2 class="title">WORKS</h2>
+                <p class="subtitle">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+                <div class="strip"></div>
+                <ul class="gallery">
+                    <li class="gallery__item"><img src="assets/img/inner-works-img1.jpg" alt="1"></li>
+                    <li class="gallery__item"><img src="assets/img/positionly-webmeup-alternative.jpg" alt="2"></li>
+                    <li class="gallery__item"><img src="assets/img/music.png" alt="3"></li>
+                    <li class="gallery__item"><img src="assets/img/4.jpg" alt="4"></li>
+                    <li class="gallery__item"><img src="assets/img/5.jpg" alt="5"></li>
+                    <li class="gallery__item"><img src="assets/img/6.jpg" alt="6"></li>
+                    <li class="gallery__item"><img src="assets/img/7.jpg" alt="7"></li>
+                    <li class="gallery__item"><img src="assets/img/8.jpg" alt="8"></li>
+                    <li class="gallery__item"><img src="assets/img/9.jpg" alt="9"></li>
+                    <li class="gallery__item"><img src="assets/img/inner-works-img10.jpg" alt="10"></li>
+                    <li class="gallery__item"><img src="assets/img/11.jpg" alt="11"></li>
+                    <li class="gallery__item"><img src="assets/img/12.jpg" alt="12"></li>
+                    <li class="gallery__item"><img src="https://cdn.dribbble.com/users/422054/screenshots/10055544/dribbble-cafe_4x.png" alt="13"></li>
+                    <li class="gallery__item"><img src="http://pankovwebmaster.ru/img/work_14.jpg" alt="14"></li>
+                    <li class="gallery__item"><img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/130488302/original/af411d71892fe8880691b676c8481a5c0d32aaa0/design-creative-professional-website-and-landing-page-ui-ux.png" alt="15"></li>
+                </ul>
+            </section>
+            <section id="happy-clients" class="happy-clients">
+                <h2 class="title">HAPPY CLIENTS</h2>
+                <p class="subtitle">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+                <div class="strip"></div>
+                <div class="happy-clients__slider">
+                    <div class="slider">
+                        <div class="slider__item">
+                            <p class="slider__content">Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации новых предложений.</p>
+                            <div class="slider__quote">”</div>
+                            <div class="slider__person">
+                                <img src="assets/img/2-layers.jpg" alt="team-member">
+                            </div>
+                            <h4 class="slider__name">Vasily Nganu</h4>
+                            <div class="slider__position">Dropbox Senior Developer</div>
+                        </div>
+                        <div class="slider__item">
+                            <p class="slider__content">Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Таким образом новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития.</p>
+                            <div class="slider__quote">”</div>
+                            <div class="slider__person">
+                                <img src="assets/img/claire.jpg" alt="team-member">
+                            </div>
+                            <h4 class="slider__name">Vasily Nganu</h4>
+                            <div class="slider__position">Dropbox Senior Developer</div>
+                        </div>
+                        <div class="slider__item">
+                            <p class="slider__content">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности играет важную роль в формировании модели развития. Равным образом консультация с широким активом в значительной степени обуславливает создание дальнейших направлений развития. Равным образом укрепление и развитие структуры требуют от нас анализа модели развития. Повседневная практика показывает, что консультация с широким активом требуют определения и уточнения дальнейших направлений развития.</p>
+                            <div class="slider__quote">”</div>
+                            <div class="slider__person">
+                                <img src="assets/img/ivan.jpg" alt="">
+                            </div>
+                            <h4 class="slider__name">Vasily Nganu</h4>
+                            <div class="slider__position">Dropbox Senior Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__controller">
+                    <span class="slider__eclipse slider__eclipse--active"></span>
+                    <span class="slider__eclipse"></span>
+                    <span class="slider__eclipse"></span>
+                </div>
+            </section>
+            <section id="team" class="team">
+                <div class="cotnainer">
+                    <div class="team__header">
+                        <h2 class="title title--team">OUR PROFESSIONAL TEAM</h2>
+                        <p class="subtitle subtitle--team">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+                        <div class="strip strip--team"></div>
+                    </div>
+                    <ul class="team__box">
+                        <li class="team-card">
+                            <div class="team-card__img">
+                                <img src="./assets/img/salazar.jpg" alt="">
+                            </div>
+                            <div class="team-card__content">
+                                <h4 class="team-card__title">Salazar Slytherin</h4>
+                                <p class="team-card__post">CEO</p>
+                                <ul class="team-card__icons">
+                                    <li class="team-card__icon">
+                                        <a href="https://twitter.com/">
+                                            <img src="./assets/img/twitter.svg" alt="twitter icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="https://www.linkedin.com/">
+                                            <img src="./assets/img/linkedin.svg" alt="linkedin icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="https://vk.com/">
+                                            <img src="./assets/img/vk-social-logotype (1).svg" alt="vk icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon team-card__icon--ball">
+                                        <a href="https://dribbble.com/">
+                                            <img src="./assets/img/dribbble.svg" alt="dibbble icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="mailto:exampleEmail@gmail.com">
+                                            <img src="./assets/img/email.svg" alt="email icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="team-card">
+                            <div class="team-card__img">
+                                <img src="./assets/img/gryffindor.jpg" alt="">
+                            </div>
+                            <div class="team-card__content">
+                                <h4 class="team-card__title">Godric Gryffindor</h4>
+                                <p class="team-card__post">Lead Developer</h5>
+                                <ul class="team-card__icons">
+                                    <li class="team-card__icon">
+                                        <a href="https://twitter.com/">
+                                            <img src="./assets/img/twitter.svg" alt="twitter icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="https://www.linkedin.com/">
+                                            <img src="./assets/img/linkedin.svg" alt="linkedin icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="https://vk.com/">
+                                            <img src="./assets/img/vk-social-logotype (1).svg" alt="vk icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon team-card__icon--ball">
+                                        <a href="https://dribbble.com/">
+                                            <img src="./assets/img/dribbble.svg" alt="dibbble icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="mailto:exampleEmail@gmail.com">
+                                            <img src="./assets/img/email.svg" alt="email icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="team-card">
+                            <div class="team-card__img">
+                                <img src="./assets/img/ravenclaw.jpg" alt="">
+                            </div>
+                            <div class="team-card__content">
+                                <h4 class="team-card__title">Rowena Ravenclaw</h4>
+                                <p class="team-card__post">Lead Designer</p>
+                                <ul class="team-card__icons">
+                                    <li class="team-card__icon">
+                                        <a href="https://twitter.com/">
+                                            <img src="./assets/img/twitter.svg" alt="twitter icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="https://www.linkedin.com/">
+                                            <img src="./assets/img/linkedin.svg" alt="linkedin icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="https://vk.com/">
+                                            <img src="./assets/img/vk-social-logotype (1).svg" alt="vk icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon team-card__icon--ball">
+                                        <a href="https://dribbble.com/">
+                                            <img src="./assets/img/dribbble.svg" alt="dibbble icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="mailto:exampleEmail@gmail.com">
+                                            <img src="./assets/img/email.svg" alt="email icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="team-card">
+                            <div class="team-card__img">
+                                <img src="./assets/img/hufflepuff.jpg" alt="">
+                            </div>
+                            <div class="team-card__content">
+                                <h4 class="team-card__title">Helga Hufflepuff</h4>
+                                <p class="team-card__post">Marketing</p>
+                                <ul class="team-card__icons">
+                                    <li class="team-card__icon">
+                                        <a href="https://twitter.com/">
+                                            <img src="./assets/img/twitter.svg" alt="twitter icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="https://www.linkedin.com/">
+                                            <img src="./assets/img/linkedin.svg" alt="linkedin icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="https://vk.com/">
+                                            <img src="./assets/img/vk-social-logotype (1).svg" alt="vk icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon team-card__icon--ball">
+                                        <a href="https://dribbble.com/">
+                                            <img src="./assets/img/dribbble.svg" alt="dibbble icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="mailto:exampleEmail@gmail.com">
+                                            <img src="./assets/img/email.svg" alt="email icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="team-card" hidden>
+                            <div class="team-card__img">
+                                <img src="./assets/img/hufflepuff.jpg" alt="">
+                            </div>
+                            <div class="team-card__content">
+                                <h4 class="team-card__title">Helga Hufflepuff</h4>
+                                <p class="team-card__post">Marketing</p>
+                                <ul class="team-card__icons">
+                                    <li class="team-card__icon">
+                                        <a href="https://twitter.com/">
+                                            <img src="./assets/img/twitter.svg" alt="twitter icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="https://www.linkedin.com/">
+                                            <img src="./assets/img/linkedin.svg" alt="linkedin icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="https://vk.com/">
+                                            <img src="./assets/img/vk-social-logotype (1).svg" alt="vk icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon team-card__icon--ball">
+                                        <a href="https://dribbble.com/">
+                                            <img src="./assets/img/dribbble.svg" alt="dibbble icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="mailto:exampleEmail@gmail.com">
+                                            <img src="./assets/img/email.svg" alt="email icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="team-card" hidden>
+                            <div class="team-card__img">
+                                <img src="./assets/img/hufflepuff.jpg" alt="">
+                            </div>
+                            <div class="team-card__content">
+                                <h4 class="team-card__title">Helga Hufflepuff</h4>
+                                <p class="team-card__post">Marketing</p>
+                                <ul class="team-card__icons">
+                                    <li class="team-card__icon">
+                                        <a href="https://twitter.com/">
+                                            <img src="./assets/img/twitter.svg" alt="twitter icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="https://www.linkedin.com/">
+                                            <img src="./assets/img/linkedin.svg" alt="linkedin icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="https://vk.com/">
+                                            <img src="./assets/img/vk-social-logotype (1).svg" alt="vk icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon team-card__icon--ball">
+                                        <a href="https://dribbble.com/">
+                                            <img src="./assets/img/dribbble.svg" alt="dibbble icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="mailto:exampleEmail@gmail.com">
+                                            <img src="./assets/img/email.svg" alt="email icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="team-card" hidden>
+                            <div class="team-card__img">
+                                <img src="./assets/img/hufflepuff.jpg" alt="">
+                            </div>
+                            <div class="team-card__content">
+                                <h4 class="team-card__title">Helga Hufflepuff</h4>
+                                <p class="team-card__post">Marketing</p>
+                                <ul class="team-card__icons">
+                                    <li class="team-card__icon">
+                                        <a href="https://twitter.com/">
+                                            <img src="./assets/img/twitter.svg" alt="twitter icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="https://www.linkedin.com/">
+                                            <img src="./assets/img/linkedin.svg" alt="linkedin icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="https://vk.com/">
+                                            <img src="./assets/img/vk-social-logotype (1).svg" alt="vk icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon team-card__icon--ball">
+                                        <a href="https://dribbble.com/">
+                                            <img src="./assets/img/dribbble.svg" alt="dibbble icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="mailto:exampleEmail@gmail.com">
+                                            <img src="./assets/img/email.svg" alt="email icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="team-card" hidden>
+                            <div class="team-card__img">
+                                <img src="./assets/img/hufflepuff.jpg" alt="">
+                            </div>
+                            <div class="team-card__content">
+                                <h4 class="team-card__title">Helga Hufflepuff</h4>
+                                <p class="team-card__post">Marketing</p>
+                                <ul class="team-card__icons">
+                                    <li class="team-card__icon">
+                                        <a href="https://twitter.com/">
+                                            <img src="./assets/img/twitter.svg" alt="twitter icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="https://www.linkedin.com/">
+                                            <img src="./assets/img/linkedin.svg" alt="linkedin icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="https://vk.com/">
+                                            <img src="./assets/img/vk-social-logotype (1).svg" alt="vk icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon team-card__icon--ball">
+                                        <a href="https://dribbble.com/">
+                                            <img src="./assets/img/dribbble.svg" alt="dibbble icon">
+                                        </a>
+                                    </li>
+                                    <li class="team-card__icon">
+                                        <a href="mailto:exampleEmail@gmail.com">
+                                            <img src="./assets/img/email.svg" alt="email icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="btn btn--empty">meet out full team</button>
+                </div>
+            </section>
+            <div id="partners" class="clients">
+                <div class="container">
+                    <ul class="clients__list">
+                        <li class="clients__item clients__item--cola">
+                            <img class="clients__icon" src="./assets/img/coca-cola.svg" alt="coca cola icon">
+                        </li>
+                        <li class="clients__item clients__item--box">
+                            <img class="clients__icon" src="./assets/img/dropbox.svg" alt="dropbox icon">
+                        </li>
+                        <li class="clients__item clients__item--intel">
+                            <img class="clients__icon" src="./assets/img/intel.svg" alt="intel icon">
+                        </li>
+                        <li class="clients__item clients__item--zendesk">
+                            <img class="clients__icon" src="./assets/img/zendesk-2.svg" alt="zendesk icon">
+                        </li>
+                        <li class="clients__item clients__item--nokia">
+                            <img class="clients__icon" src="./assets/img/nokia-3.svg" alt="nokia icon">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section id="pricing" class="pricing" >
+                <div class="container">
+                    <div class="pricing__header">
+                        <h2 class="title">PRICING TABLE</h2>
+                        <p class="subtitle">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
+                        <div class="strip"></div>
+                    </div>
+                    <ul class="pricing__cards">
+                        <li class="price-card price-card--standart">
+                            <div class="price-card__header">
+                                <h4 class="price-card__title">Standart pack</h4>
+                                <p class="price-card__price">$50</p>
+                                <p class="price-card__subtitle">per month</p>
+                            </div>
+                            <div class="price-card__content">
+                                <div class="price-card__text">
+                                    <p class="price-card__facility">exercitation ullaborum sed do</p>
+                                    <p class="price-card__facility">eiusmod tempor incididunt ut quis</p>
+                                    <p class="price-card__facility">nostrud exercitation ullamco laboris</p>
+                                </div>
+                                <a href="#ex1" rel="modal:open" class="btn btn--card btn--modal">sign up</a>
+                            </div>
+                        </li>
+                        <li class="price-card price-card--best">
+                            <div class="price-card__header">
+                                <h4 class="price-card__title">Best pack</h4>
+                                <p class="price-card__price">$100</p>
+                                <p class="price-card__subtitle">per month</p>
+                            </div>
+                            <div class="price-card__content">
+                                <div class="price-card__text">
+                                    <p class="price-card__facility">exercitation ullaborum sed do</p>
+                                    <p class="price-card__facility">eiusmod tempor incididunt ut quis</p>
+                                    <p class="price-card__facility">nostrud exercitation ullamco laboris</p>
+                                    <p class="price-card__facility">nostrud exercitation ullamco laboris</p>
+                                </div>
+                                <a href="#ex1" rel="modal:open" class="btn btn--card btn--modal">sign up</a>
+                            </div>
+                            <div class="price-card__best-strip"></div>
+                        </li>
+                        <li class="price-card price-card--standart">
+                            <div class="price-card__header">
+                                <h4 class="price-card__title">Vip pack</h4>
+                                <p class="price-card__price">$250</p>
+                                <p class="price-card__subtitle">per month</p>
+                            </div>
+                            <div class="price-card__content">
+                                <div class="price-card__text">
+                                    <p class="price-card__facility">exercitation ullaborum sed do</p>
+                                    <p class="price-card__facility">eiusmod tempor incididunt ut quis</p>
+                                    <p class="price-card__facility">nostrud exercitation ullamco laboris</p>
+                                    <p class="price-card__facility">nostrud exercitation ullamco laboris</p>
+                                    <p class="price-card__facility">nostrud exercitation ullamco laboris</p>
+                                </div>
+                                <a href="#ex1" rel="modal:open" class="btn btn--card btn--modal">sign up</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div id="contacts" class="contact">
+                <div class="contact__card">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213460.92194068508!2d106.72879471808426!3d-6.211589712839776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f0da2bd3a43b%3A0x26a7593c9447a312!2sSMP%20Negeri%20267%20Jakarta!5e0!3m2!1sen!2sru!4v1621958577272!5m2!1sen!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="contact__form-wrapper">
+                    <form class="form" action="https://formspree.io/f/mleabezk" method="POST">
+                        <label class="form__label">
+                            <span class="form__text">Name</span>
+                            <input class="form__field form__input" name="name" type="text">
+                        </label>
+                        <label class="form__label">
+                            <span class="form__text">Email</span>
+                            <input class="form__field form__input" name="email" type="email">
+                        </label>
+                        <label class="form__label">
+                            <span class="form__text">Phone</span>
+                            <input class="form__field form__input" name="phone" type="tel">
+                        </label>
+                        <label class="form__label">
+                            <span class="form__text form__text--message">Message</span>
+                            <textarea name="message" class="form__field form__area" name="message"></textarea>
+                        </label>
+                        <label class="form__label form__label--btn">
+                            <button class="btn btn__submit" type="submit">Submit</button>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__logo">
+                        <div class="logo logo--footer">
+                            <a href="/">Zet</a>
+                        </div>
+                        <div class="footer__copy">&copy; Copyright 2015. Allright Reserved</div>
+                    </div>
+                    <div class="footer__side">
+                        <div class="footer__text">
+                            Stay in Touch
+                        </div>
+                        <ul class="footer__link-wrapper">
+                            <li class="footer__link">
+                                <a href="https://www.facebook.com/">
+                                    <img src="./assets/img/facebook-small.svg" alt="facebook icon">
+                                </a>
+                            </li>
+                            <li class="footer__link">
+                                <a href="https://twitter.com/home">
+                                    <img src="./assets/img/twitter-small.svg" alt="twitter icon">
+                                </a>
+                            </li>
+                            <li class="footer__link">
+                                <a href="https://www.google.com/">
+                                    <img src="./assets/img/Google_Plus.svg" alt="google icon">
+                                </a>
+                            </li>
+                            <li class="footer__link">
+                                <a href="https://dribbble.com/">
+                                    <img src="./assets/img/Dribbble_social_media_logo-_1964413.svg" alt="dribbble icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="ex1" class="modal">
+        <form class="form form--footer" action="#">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Свяжитесь с нами:</legend>
+                <label class="form__label">
+                    <span class="form__text">Name</span>
+                    <input class="form__field form__input" name="name" type="text">
+                </label>
+                <label class="form__label">
+                    <span class="form__text">Email</span>
+                    <input class="form__field form__input" name="email" type="email">
+                </label>
+                <label class="form__label">
+                    <span class="form__text">Phone</span>
+                    <input class="form__field form__input" name="phone" type="tel">
+                </label>
+                <label class="form__label">
+                    <span class="form__text form__text--message">Message</span>
+                    <textarea name="message" class="form__field form__area" name="message"></textarea>
+                </label>
+                <label class="form__label form__label--btn">
+                    <button class="btn btn__submit" type="submit">Submit</button>
+                </label>
+            </fieldset>
+        </form>
+      </div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="assets/js/index.min.js"></script>
+</body>
+</html>
