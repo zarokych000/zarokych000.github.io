@@ -1,0 +1,2 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(function(){var e,t,o,n;console.log("dom is ready"),e=".nav__toggler",t=".nav__list--mobile",o=document.querySelector(e),n=document.querySelector(t),o.addEventListener("click",(function(){n.classList.toggle("show--flex")}))}))})();
+//# sourceMappingURL=bundle.js.map
