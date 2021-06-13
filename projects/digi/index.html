@@ -32,16 +32,16 @@
             <div class="slider">
                 <div class="slider__item">
                     <div class="slider__arrows">
-                        <div class="slider__img-wrapper" aria-label="slider-arrow right button">
-                            <svg class="slider__img slider__img--reverse" aria-label="slider-arrow right image">
+                        <button class="slider__img-wrapper" aria-label="right slider-arrow">
+                            <svg class="slider__img slider__img--reverse" aria-hidden="true">
                                 <use href="sprite.svg#arrow"></use>
                             </svg>
-                        </div>
-                        <div class="slider__img-wrapper slider__img-wrapper--beige" aria-label="slider-arrow left button">
-                            <svg class="slider__img" aria-label="slider-arrow left image">
+                        </button>
+                        <button class="slider__img-wrapper slider__img-wrapper--beige" aria-label="left slider-arrow">
+                            <svg class="slider__img" aria-hidden="true">
                                 <use href="sprite.svg#arrow"></use>
                             </svg>
-                        </div>
+                        </button>
                     </div>
                     <h3 class="slider__title">
                         МЫСЛИ <br>ГЛОБАЛЬНО
@@ -51,11 +51,26 @@
                     </p>
                     <button class="btn btn__slider">подробнее</button>
                 </div>
-                <div class="slider__dots" aria-label="slider-dots">
-                    <span class="slider__dot" aria-label="slider-dot"></span>
-                    <span class="slider__dot slider__dot--active" aria-label="slider-dot"></span>
-                    <span class="slider__dot" aria-label="slider-dot"></span>
-                </div>
+                <ul class="slider__dots">
+                    <li>
+                        <button>
+                            <span class="slider__dot" aria-hidden="true"></span>
+                            <span class="sr-only">go to slide 1</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <span class="slider__dot" aria-hidden="true"></span>
+                            <span class="sr-only">go to slide 2</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <span class="slider__dot slider__dot--active" aria-hidden="true"></span>
+                            <span class="sr-only">go to slide 3</span>
+                        </button>
+                    </li>
+                </ul>
             </div>
             <div class="container">
                 <div class="header__article">
@@ -360,7 +375,7 @@
             <div class="footer__top">
                 <div class="container container--bottom">
                     <span class="footer__span">Вверх</span>
-                    <div class="footer__arrow" aria-label="navigation arrow to website top"></div>
+                    <button class="footer__arrow" aria-label="to start of website"></button>
                 </div>
             </div>
         </footer>
