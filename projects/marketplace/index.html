@@ -1,497 +1,918 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#44494a">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css">
-    <title>MarketPlace</title>
-</head>
-<body>
-    <header class="header">
-        <div class="header-panel">
-            <div class="container">
-                <div class="header-panel__wrapper">
-                    <a href="#" class="logo">MarketPlace</a>
-                    <div class="search">
-                        <label class="search__label" for="search">
+    <head>
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/favicon/favicon-16x16.png"
+        />
+        <link
+            rel="mask-icon"
+            href="assets/favicon/safari-pinned-tab.svg"
+            color="#44494a"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.min.css" />
+        <title>MarketPlace</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-panel">
+                <div class="container">
+                    <div class="header-panel__wrapper">
+                        <a href="#" class="logo">MarketPlace</a>
+                        <div class="search">
+                            <label class="search__label" for="search">
+                                <svg class="icon">
+                                    <use href="sprite.svg#search"></use>
+                                </svg>
+                            </label>
+                            <input
+                                class="search__input"
+                                type="text"
+                                id="search"
+                                placeholder="Поиск: "
+                                autocomplete="off"
+                            />
+                        </div>
+                        <div class="favourites">
                             <svg class="icon">
-                                <use href="sprite.svg#search"></use>
+                                <use href="sprite.svg#bookmark"></use>
                             </svg>
-                        </label>
-                        <input class="search__input" type="text" id="search" placeholder="Поиск: " autocomplete="off">
-                    </div>
-                    <div class="favourites">
-                        <svg class="icon">
-                            <use href="sprite.svg#bookmark"></use>
-                        </svg>
-                        <span class="favourites__text">Закладки: </span>
-                        <span class="favourites__count"> 0</span>
-                    </div>
-                    <div class="shopping-cart">
-                        <svg class="icon">
-                            <use href="sprite.svg#cart"></use>
-                        </svg>
-                        <span class="shopping-cart__text">Корзина: </span>
-                        <span class="shopping-cart__count"> 0</span>
-                    </div>
-                    <button class="btn btn__checkout">Оформить заказ</button>
-                </div>
-            </div>
-        </div>
-        <section class="intro">
-            <div class="container container--intro">
-                <h1 class="intro__description">Интернет-магазин<br>строительных материалов<br> и инструментов для ремонта</h1>
-                <div class="intro__contact">
-                    <div class="intro__content">
-                        <svg class="icon">
-                            <use href="sprite.svg#phone"></use>
-                        </svg>
-                        <a class="intro__phone" href="tel:+79999999999">+7-(999)-99-99</a>
-                    </div>
-                    <div class="adress--header">г. Санкт-Петербург, ул.Б. Конюшенная, д.12</div>
-                </div>
-                <div class="intro__control">
-                    <div class="intro__login">
-                        <svg class="icon">
-                            <use href="sprite.svg#login"></use>
-                        </svg>
-                        <div class="intro__login-text">Войти</div>
-                    </div>
-                    <div class="intro__registration">Регистрация</div>
-                </div>
-            </div>
-        </section>
-        <nav class="header-panel__nav">
-            <div class="container">
-                <ul class="link link--header">
-                    <li class="link__wrapper"><a class="link__item" href="#" >Главная</a></li>
-                    <li class="link__wrapper link__wrapper--disabled"><a class="link__item" href="#">Компания</a></li>
-                    <li class="link__wrapper"><a class="link__item" href="./catalog.html">Каталог</a></li>
-                    <li class="link__wrapper link__wrapper--disabled"><a class="link__item" href="#">Новости</a></li>
-                    <li class="link__wrapper link__wrapper--disabled"><a class="link__item" href="#">Спецпредложения</a></li>
-                    <li class="link__wrapper link__wrapper--disabled"><a class="link__item" href="#">Доставка</a></li>
-                    <li class="link__wrapper link__wrapper--disabled"><a class="link__item" href="#">Контакты</a></li>
-                    <li>
-                        <svg class="link__mobile-arrow">
-                            <use href="sprite.svg#arrow"></use>
-                        </svg>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="card-galery">
-            <div class="container">
-                <ul class="card-galery__wrapper">
-                    <li class="card card--matherial">
-                        <div class="card__wrapper">
-                            <div class="new-brand">new</div>
-                            <div class="card__text">Материалы</div>
-                            <button class="card__link card__link--matherial">НА ЛЮБОЙ ВКУС</button>
+                            <span class="favourites__text">Закладки: </span>
+                            <span class="favourites__count"> 0</span>
                         </div>
-                        <div class="card__image-wrapper">
-                            <img class="card__image" src="icons/matherial-icon.png" alt="">
+                        <div class="shopping-cart">
+                            <svg class="icon">
+                                <use href="sprite.svg#cart"></use>
+                            </svg>
+                            <span class="shopping-cart__text">Корзина: </span>
+                            <span class="shopping-cart__count"> 0</span>
                         </div>
-                    </li>
-                    <li class="card card--tool">
-                        <div class="card__wrapper">
-                            <div class="card__text">Инструмент</div>
-                            <button class="card__link card__link--tool">НА ВСЕ СЛУЧАИ</button>
-                        </div>
-                        <div class="card__image-wrapper">
-                            <img class="card__image" src="icons/tool-icon.png" alt="">
-                        </div>
-                    </li>
-                    <li class="card card--tech">
-                        <div class="card__wrapper">
-                            <div class="card__text">Техника</div>
-                            <button class="card__link card__link--tech">ДЛЯ СТРОЙКИ</button>
-                        </div>
-                        <div class="card__image-wrapper">
-                            <img class="card__image" src="icons/tech-icon.png" alt="">
-                        </div>
-                    </li>
-                    <li class="slider__wrapper">
-                        <div class="slider__arrow slider__arrow--left">
-                            <img src="icons/leftarrow.svg" alt="arrow-left">
-                        </div>
-                        <ul class="slider">
-                            <li class="slider__item slider__item--dril">
-                                <div class="slider__text">
-                                    <h3 class="slider__title">Дрели</h3>
-                                    <p class="slider__description">Соседям на радость!</p>
-                                </div>
-                                <button class="btn btn__slider">ОТКРЫТЬ КАТАЛОГ</button>
-                            </li>
-                        </ul>
-                        <div class="slider__arrow slider__arrow--right">
-                            <img src="icons/leftarrow.svg" alt="arrow-right">
-                        </div>
-                    </li>
-                    <li class="card card--promote">
-                        <div class="card__wrapper">
-                            <div class="card__text card__text--promote">Скидки</div>
-                            <button class="card__link card__link--promote">НА 350 ТОВАРОВ</button>
-                        </div>
-                        <div class="card__image-wrapper">
-                            <img class="card__image" src="icons/promote-icon.png" alt="">
-                        </div>
-                    </li>
-                    <li class="card card--delivery">
-                        <div class="card__wrapper card__wrapper--delivery">
-                            <div class="card__text card__text--delivery">Доставка</div>
-                            <button class="card__link card__link--delivery">БЕСПЛАТНО</button>
-                        </div>
-                        <div class="card__image-wrapper card__image-wrapper--delivery">
-                            <img class="card__image card__image--delivery" src="icons/delivery-icon.png" alt="">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="popular-products">
-            <div class="container">
-                <div class="panel">
-                    <h3 class="panel__title">ПОПУЛЯРНЫЕ ТОВАРЫ:</h3>
-                    <button class="btn btn__panel">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</button>
-                </div>
-                <div class="popular-products__list">
-                    <div class="products__item">
-                        <div class="products__flipper">
-                            <div class="products__front">
-                                <div class="products__image">
-                                    <img src="img/Perforator_1.jpg" alt="">
-                                </div>  
-                                <div class="products__about">
-                                    <h4 class="products__title">Перфоратор BOSCH<br>BFG 9000</h4>
-                                    <div class="products__old">32500 Р.</div>
-                                    <div class="products__label">25500 Р.</div>
-                                </div>
-                            </div>
-                            <div class="products__back">
-                                <div class="products__buttons-wrapper">
-                                    <div class="products__wrapper-buy-btn">
-                                        <svg class="icon--buy">
-                                            <use href="sprite.svg#cart"></use>
-                                        </svg>
-                                        <button class="btn btn__back btn__back--buy">Купить</button>
-                                    </div>
-                                    <button class="btn btn__back btn__back--favorites">В закладки</button>
-                                </div>
-                                <div class="products__about--back">
-                                    <h4 class="products__title products__title--back">Перфоратор BOSCH<br>BFG 9000</h4>
-                                    <div class="products__label products__label--back">25500 Р.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="products__flipper">
-                            <div class="products__front">
-                                <div class="products__image">
-                                    <img src="img/Perforator_2.jpg" alt="">
-                                </div>
-                                <div class="products__about">
-                                    <h4 class="products__title">Перфоратор BOSCH<br>BFG 3000</h4>
-                                    <div class="products__old">22500 Р.</div>
-                                    <div class="products__label">15500 Р.</div>
-                                </div>
-                            </div>
-                            <div class="products__back">
-                                <div class="products__buttons-wrapper">
-                                    <div class="products__wrapper-buy-btn">
-                                        <svg class="icon--buy">
-                                            <use href="sprite.svg#cart"></use>
-                                        </svg>
-                                        <button class="btn btn__back btn__back--buy">Купить</button>
-                                    </div>
-                                    <button class="btn btn__back btn__back--favorites">В закладки</button>
-                                </div>
-                                <div class="products__about--back">
-                                    <h4 class="products__title products__title--back">Перфоратор BOSCH<br>BFG 9000</h4>
-                                    <div class="products__label products__label--back">25500 Р.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="products__flipper">
-                            <div class="products__front">
-                                <div class="products__image">
-                                    <img src="img/Perforator_3.jpg" alt="">
-                                </div>
-                                <div class="products__about">
-                                    <h4 class="products__title">Перфоратор BOSCH<br>BFG 6000</h4>
-                                    <div class="products__old">30500 Р.</div>
-                                    <div class="products__label">25500 Р.</div>
-                                </div>
-                            </div>
-                            <div class="products__back">
-                                <div class="products__buttons-wrapper">
-                                    <div class="products__wrapper-buy-btn">
-                                        <svg class="icon--buy">
-                                            <use href="sprite.svg#cart"></use>
-                                        </svg>
-                                        <button class="btn btn__back btn__back--buy">Купить</button>
-                                    </div>
-                                    <button class="btn btn__back btn__back--favorites">В закладки</button>
-                                </div>
-                                <div class="products__about--back">
-                                    <h4 class="products__title products__title--back">Перфоратор BOSCH<br>BFG 9000</h4>
-                                    <div class="products__label products__label--back">25500 Р.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products__item products__item--new">
-                        <div class="products__flipper">
-                            <div class="products__front">
-                                <div class="new-brand new-brand--products">new</div>
-                                <div class="products__image">
-                                    <img src="img/Perforator_4.jpg" alt="">
-                                </div>
-                                <div class="products__about">
-                                    <h4 class="products__title">Перфоратор BOSCH<br>BFG 2000</h4>
-                                    <div style="opacity: 0;" class="products__old">32500 Р.</div>
-                                    <div class="products__label">12500 Р.</div>
-                                </div>
-                            </div>
-                            <div class="products__back">
-                                <div class="new-brand new-brand--products">new</div>
-                                <div class="products__buttons-wrapper">
-                                    <div class="products__wrapper-buy-btn">
-                                        <svg class="icon--buy">
-                                            <use href="sprite.svg#cart"></use>
-                                        </svg>
-                                        <button class="btn btn__back btn__back--buy">Купить</button>
-                                    </div>
-                                    <button class="btn btn__back btn__back--favorites">В закладки</button>
-                                </div>
-                                <div class="products__about--back">
-                                    <h4 class="products__title products__title--back">Перфоратор BOSCH<br>BFG 9000</h4>
-                                    <div class="products__label products__label--back">25500 Р.</div>
-                                </div>
-                            </div>
-                        </div>
+                        <button class="btn btn__checkout">
+                            Оформить заказ
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="popular-fabricators">
-            <div class="container">
-                <div class="panel">
-                    <h3 class="panel__title">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h3>
-                    <button class="btn btn__panel">ВСЕ ПРОИЗВОДИТЕЛИ</button>
-                </div>
-                <ul class="popular-fabricators__gallery">
-                    <li class="popular-fabricators__card bosch">
-                        <img src="img/bosch.png" alt="">
-                    </li>
-                    <li class="popular-fabricators__card makita">
-                        <img src="img/Makita.png" alt="">
-                    </li>
-                    <li class="popular-fabricators__card dewalt">
-                        <img src="img/DeWALT.png" alt="">
-                    </li>
-                    <li class="popular-fabricators__card interscoll">
-                        <img src="img/Интерскол.png" alt="">
-                    </li>
-                    <li class="popular-fabricators__card hitachi">
-                        <img src="img/Hitachi.png" alt="">
-                    </li>
-                    <li class="popular-fabricators__card lg">
-                        <img src="img/LG.png" alt="">
-                    </li>
-                    <li class="popular-fabricators__card aeg">
-                        <img src="img/AEG.png" alt="">
-                    </li>
-                    <li class="popular-fabricators__card metabo">
-                        <img src="img/Metabo.png" alt="">
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <article class="service">
-            <div class="container">
-                <div class="service__wrapper">
-                    <div class="service__header">
-                        <h3 class="service__title">Сервисы</h3>
-                        <p class="service__description">Хороший интернет-магазин отличается от плохого не только ценами!<br>
-                        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+            <section class="intro">
+                <div class="container container--intro">
+                    <h1 class="intro__description">
+                        Интернет-магазин<br />строительных материалов<br />
+                        и инструментов для ремонта
+                    </h1>
+                    <div class="intro__contact">
+                        <div class="intro__content">
+                            <svg class="icon">
+                                <use href="sprite.svg#phone"></use>
+                            </svg>
+                            <a class="intro__phone" href="tel:+79999999999"
+                                >+7-(999)-99-99</a
+                            >
+                        </div>
+                        <div class="adress--header">
+                            г. Санкт-Петербург, ул.Б. Конюшенная, д.12
+                        </div>
                     </div>
-                    <div class="service__content">
-                        <ul class="service__tabs-control">
-                            <li class="service__tab service__tab-active">Доставка</li>
-                            <li class="service__tab">Гарантия</li>
-                            <li class="service__tab">Кредит</li>
-                            <li class="weird-shadow"><img src="img/weird-shadow.png" alt=""></li>
-                        </ul>
-                        <ul class="service__tabs">
-                            <li class="service-tab__content delivery hide">
-                                <div class="service-tab__text">
-                                    <h4 class="service-tab__title">Доставка</h4>
-                                    <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно
-                                        бесплатно!<br>Ведь мы неплохо зарабатываем,<br>поднимая его на ваш этаж!
-                                    </p>
-                                </div>
-                                <div class="service-tab__image">
-                                    <img src="img/service-image.png" alt="">
-                                </div>
-                            </li>
-                            <li class="service-tab__content guarantee hide">
-                                <div class="service-tab__text">
-                                    <h4 class="service-tab__title">Гарантия</h4>
-                                    <p>Если купленный у нас товар поломается или заискрит,<br>
-                                        а также в случае пожара, спровоцированного его возгоранием,<br>
-                                        вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
-                                        сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.
-                                    </p>
-                                </div>
-                                <div class="service-tab__image">
-                                    <img src="img/medal.png" alt="">
-                                </div>
-                            </li>
-                            <li class="service-tab__content credit">
-                                <div class="service-tab__text">
-                                    <h4 class="service-tab__title">Кредит</h4>
-                                    <p>
-                                    Залезть в долговую яму стало проще!<br>
-                                    Кредитные консультанты придут вам на помощь.
-                                    </p>
-                                    <button class="btn btn__service">Отправить заявку</button>
-                                </div>
-                                <div class="service-tab__image">
-                                    <img src="img/creadit.png" alt="">
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="intro__control">
+                        <div class="intro__login">
+                            <svg class="icon">
+                                <use href="sprite.svg#login"></use>
+                            </svg>
+                            <div class="intro__login-text">Войти</div>
+                        </div>
+                        <div class="intro__registration">Регистрация</div>
                     </div>
                 </div>
-            </div>
-        </article>
-        <article class="information">
-            <div class="container">
-                <div class="information__wrapper">
-                    <div class="information__company">
-                        <h4 class="information__title">Компания "marketplace"</h4>
-                        <div class="information__description">
-                            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и <br>
-                            строительства не оставит равнодушными любителей сэкономить на васянах.
-                        </div>
-                        <div class="information__delivery">
-                            Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-                            marketplace работает со многими надежными транспортными компаниями:
-                        </div>
-                        <div class="information__partners">
-                            <div class="information__partner">Деловые линии</div>
-                            <div class="information__partner">Автотрейдинг</div>
-                            <div class="information__partner">ЖелДорЭкспедиция</div>
-                        </div>
-                        <button class="btn btn__information">Подробнее о компании</button>
-                    </div>
-                    <div class="information__contacts">
-                        <h4 class="information__contacts-title">Контакты</h4>
-                        <p class="information__contacts-description">Вы можете забрать товар сами,<br>заехав в наш офис</p>
-                        <div class="information__contacts-map">
-                            <iframe class="information__cards" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d841.3466115386516!2d37.630636483784876!3d55.73893956918486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afd123b7831%3A0xcf308624b96d80e1!2z0KHRgtCw0YDRi9C5INCi0L7Qu9C80LDRh9C10LLRgdC60LjQuSDQv9C10YAuLCAxMSDQutC-0YDQv9GD0YEgNywg0JzQvtGB0LrQstCwLCAxMTUxODQ!5e0!3m2!1sru!2sru!4v1613251397733!5m2!1sru!2sru" width="300" height="200" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </div>
-                        <button class="btn btn__contacts">заблудились? напишите нам!</button>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <nav class="footer__nav">
-                    <a class="logo logo--footer" href="index.html">MarketPlace</a>
-                    <ul class="link link--footer">
-                        <li><a class="link__item" href="#">Главная</a></li>
-                        <li><a class="link__item" href="#">Новости</a></li>
-                        <li><a class="link__item" href="#">Каталог</a></li>
-                        <li><a class="link__item" href="#">Доставка</a></li>
-                        <li><a class="link__item" href="#">Контакты</a></li>
+            </section>
+            <nav class="header-panel__nav">
+                <div class="container">
+                    <ul class="link link--header">
+                        <li class="link__wrapper">
+                            <a class="link__item" href="#">Главная</a>
+                        </li>
+                        <li class="link__wrapper link__wrapper--disabled">
+                            <a class="link__item" href="#">Компания</a>
+                        </li>
+                        <li class="link__wrapper">
+                            <a class="link__item" href="./catalog.html"
+                                >Каталог</a
+                            >
+                        </li>
+                        <li class="link__wrapper link__wrapper--disabled">
+                            <a class="link__item" href="#">Новости</a>
+                        </li>
+                        <li class="link__wrapper link__wrapper--disabled">
+                            <a class="link__item" href="#">Спецпредложения</a>
+                        </li>
+                        <li class="link__wrapper link__wrapper--disabled">
+                            <a class="link__item" href="#">Доставка</a>
+                        </li>
+                        <li class="link__wrapper link__wrapper--disabled">
+                            <a class="link__item" href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <svg class="link__mobile-arrow">
+                                <use href="sprite.svg#arrow"></use>
+                            </svg>
+                        </li>
                     </ul>
-                </nav>
-                <nav class="footer__subnav">
-                    <div class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7(999) 999-99-99</div>
-                    <ul class="link link--subfooter">
-                        <li><a class="link__item link__item--yellow" href="#">Материалы</a></li>
-                        <li><a class="link__item link__item--yellow" href="#">Техника</a></li>
-                        <li><a class="link__item link__item--yellow" href="#">Инструмент</a></li>
-                        <li><a class="link__item link__item--yellow" href="#">Спецпредложения</a></li>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="card-galery">
+                <div class="container">
+                    <ul class="card-galery__wrapper">
+                        <li class="card card--matherial">
+                            <div class="card__wrapper">
+                                <div class="new-brand">new</div>
+                                <div class="card__text">Материалы</div>
+                                <button
+                                    class="card__link card__link--matherial"
+                                >
+                                    НА ЛЮБОЙ ВКУС
+                                </button>
+                            </div>
+                            <div class="card__image-wrapper">
+                                <img
+                                    class="card__image"
+                                    src="icons/matherial-icon.png"
+                                    alt=""
+                                />
+                            </div>
+                        </li>
+                        <li class="card card--tool">
+                            <div class="card__wrapper">
+                                <div class="card__text">Инструмент</div>
+                                <button class="card__link card__link--tool">
+                                    НА ВСЕ СЛУЧАИ
+                                </button>
+                            </div>
+                            <div class="card__image-wrapper">
+                                <img
+                                    class="card__image"
+                                    src="icons/tool-icon.png"
+                                    alt=""
+                                />
+                            </div>
+                        </li>
+                        <li class="card card--tech">
+                            <div class="card__wrapper">
+                                <div class="card__text">Техника</div>
+                                <button class="card__link card__link--tech">
+                                    ДЛЯ СТРОЙКИ
+                                </button>
+                            </div>
+                            <div class="card__image-wrapper">
+                                <img
+                                    class="card__image"
+                                    src="icons/tech-icon.png"
+                                    alt=""
+                                />
+                            </div>
+                        </li>
+                        <li class="slider__wrapper">
+                            <button class="slider__arrow slider__arrow--left">
+                                <svg
+                                    width="129"
+                                    height="129"
+                                    viewBox="0 0 129 129"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="slider-arrow"
+                                >
+                                    <path
+                                        d="M88.6 121.3C89.4 122.1 90.4 122.5 91.5 122.5C92.6 122.5 93.6 122.1 94.4 121.3C96 119.7 96 117.1 94.4 115.5L43.4 64.5L94.4 13.5C96 11.9 96 9.3 94.4 7.7C92.8 6.1 90.2 6.1 88.6 7.7L34.6 61.6C33 63.2 33 65.8 34.6 67.4L88.6 121.3V121.3Z"
+                                    />
+                                </svg>
+                            </button>
+                            <div class="slider">
+                                <div class="slider__item slider__item--dril">
+                                    <div class="slider__text">
+                                        <h3 class="slider__title">Дрели</h3>
+                                        <p class="slider__description">
+                                            Соседям на радость!
+                                        </p>
+                                    </div>
+                                    <button class="btn btn__slider">
+                                        ОТКРЫТЬ КАТАЛОГ
+                                    </button>
+                                </div>
+                                <div class="slider__item slider__item--dril">
+                                    <div class="slider__text">
+                                        <h3 class="slider__title">Слайд 2</h3>
+                                        <p class="slider__description">
+                                            Соседям на радость!
+                                        </p>
+                                    </div>
+                                    <button class="btn btn__slider">
+                                        ОТКРЫТЬ КАТАЛОГ
+                                    </button>
+                                </div>
+                                <div class="slider__item slider__item--dril">
+                                    <div class="slider__text">
+                                        <h3 class="slider__title">Слайд 3</h3>
+                                        <p class="slider__description">
+                                            Соседям на радость!
+                                        </p>
+                                    </div>
+                                    <button class="btn btn__slider">
+                                        ОТКРЫТЬ КАТАЛОГ
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="slider__arrow slider__arrow--right">
+                                <svg
+                                    width="129"
+                                    height="129"
+                                    viewBox="0 0 129 129"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="slider-arrow"
+                                >
+                                    <path
+                                        d="M88.6 121.3C89.4 122.1 90.4 122.5 91.5 122.5C92.6 122.5 93.6 122.1 94.4 121.3C96 119.7 96 117.1 94.4 115.5L43.4 64.5L94.4 13.5C96 11.9 96 9.3 94.4 7.7C92.8 6.1 90.2 6.1 88.6 7.7L34.6 61.6C33 63.2 33 65.8 34.6 67.4L88.6 121.3V121.3Z"
+                                    />
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="card card--promote">
+                            <div class="card__wrapper">
+                                <div class="card__text card__text--promote">
+                                    Скидки
+                                </div>
+                                <button class="card__link card__link--promote">
+                                    НА 350 ТОВАРОВ
+                                </button>
+                            </div>
+                            <div class="card__image-wrapper">
+                                <img
+                                    class="card__image"
+                                    src="icons/promote-icon.png"
+                                    alt=""
+                                />
+                            </div>
+                        </li>
+                        <li class="card card--delivery">
+                            <div class="card__wrapper card__wrapper--delivery">
+                                <div class="card__text card__text--delivery">
+                                    Доставка
+                                </div>
+                                <button class="card__link card__link--delivery">
+                                    БЕСПЛАТНО
+                                </button>
+                            </div>
+                            <div
+                                class="
+                                    card__image-wrapper
+                                    card__image-wrapper--delivery
+                                "
+                            >
+                                <img
+                                    class="card__image card__image--delivery"
+                                    src="icons/delivery-icon.png"
+                                    alt=""
+                                />
+                            </div>
+                        </li>
                     </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="footer__bottom">
+                </div>
+            </section>
+            <section class="popular-products">
+                <div class="container">
+                    <div class="panel">
+                        <h3 class="panel__title">ПОПУЛЯРНЫЕ ТОВАРЫ:</h3>
+                        <button class="btn btn__panel">
+                            ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ
+                        </button>
+                    </div>
+                    <div class="popular-products__list">
+                        <div class="products__item">
+                            <div class="products__flipper">
+                                <div class="products__front">
+                                    <div class="products__image">
+                                        <img
+                                            src="img/Perforator_1.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="products__about">
+                                        <h4 class="products__title">
+                                            Перфоратор BOSCH<br />BFG 9000
+                                        </h4>
+                                        <div class="products__old">
+                                            32500 Р.
+                                        </div>
+                                        <div class="products__label">
+                                            25500 Р.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__back">
+                                    <div class="products__buttons-wrapper">
+                                        <div class="products__wrapper-buy-btn">
+                                            <svg class="icon--buy">
+                                                <use
+                                                    href="sprite.svg#cart"
+                                                ></use>
+                                            </svg>
+                                            <button
+                                                class="
+                                                    btn btn__back btn__back--buy
+                                                "
+                                            >
+                                                Купить
+                                            </button>
+                                        </div>
+                                        <button
+                                            class="
+                                                btn
+                                                btn__back
+                                                btn__back--favorites
+                                            "
+                                        >
+                                            В закладки
+                                        </button>
+                                    </div>
+                                    <div class="products__about--back">
+                                        <h4
+                                            class="
+                                                products__title
+                                                products__title--back
+                                            "
+                                        >
+                                            Перфоратор BOSCH<br />BFG 9000
+                                        </h4>
+                                        <div
+                                            class="
+                                                products__label
+                                                products__label--back
+                                            "
+                                        >
+                                            25500 Р.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__flipper">
+                                <div class="products__front">
+                                    <div class="products__image">
+                                        <img
+                                            src="img/Perforator_2.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="products__about">
+                                        <h4 class="products__title">
+                                            Перфоратор BOSCH<br />BFG 3000
+                                        </h4>
+                                        <div class="products__old">
+                                            22500 Р.
+                                        </div>
+                                        <div class="products__label">
+                                            15500 Р.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__back">
+                                    <div class="products__buttons-wrapper">
+                                        <div class="products__wrapper-buy-btn">
+                                            <svg class="icon--buy">
+                                                <use
+                                                    href="sprite.svg#cart"
+                                                ></use>
+                                            </svg>
+                                            <button
+                                                class="
+                                                    btn btn__back btn__back--buy
+                                                "
+                                            >
+                                                Купить
+                                            </button>
+                                        </div>
+                                        <button
+                                            class="
+                                                btn
+                                                btn__back
+                                                btn__back--favorites
+                                            "
+                                        >
+                                            В закладки
+                                        </button>
+                                    </div>
+                                    <div class="products__about--back">
+                                        <h4
+                                            class="
+                                                products__title
+                                                products__title--back
+                                            "
+                                        >
+                                            Перфоратор BOSCH<br />BFG 9000
+                                        </h4>
+                                        <div
+                                            class="
+                                                products__label
+                                                products__label--back
+                                            "
+                                        >
+                                            25500 Р.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__flipper">
+                                <div class="products__front">
+                                    <div class="products__image">
+                                        <img
+                                            src="img/Perforator_3.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="products__about">
+                                        <h4 class="products__title">
+                                            Перфоратор BOSCH<br />BFG 6000
+                                        </h4>
+                                        <div class="products__old">
+                                            30500 Р.
+                                        </div>
+                                        <div class="products__label">
+                                            25500 Р.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__back">
+                                    <div class="products__buttons-wrapper">
+                                        <div class="products__wrapper-buy-btn">
+                                            <svg class="icon--buy">
+                                                <use
+                                                    href="sprite.svg#cart"
+                                                ></use>
+                                            </svg>
+                                            <button
+                                                class="
+                                                    btn btn__back btn__back--buy
+                                                "
+                                            >
+                                                Купить
+                                            </button>
+                                        </div>
+                                        <button
+                                            class="
+                                                btn
+                                                btn__back
+                                                btn__back--favorites
+                                            "
+                                        >
+                                            В закладки
+                                        </button>
+                                    </div>
+                                    <div class="products__about--back">
+                                        <h4
+                                            class="
+                                                products__title
+                                                products__title--back
+                                            "
+                                        >
+                                            Перфоратор BOSCH<br />BFG 9000
+                                        </h4>
+                                        <div
+                                            class="
+                                                products__label
+                                                products__label--back
+                                            "
+                                        >
+                                            25500 Р.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item products__item--new">
+                            <div class="products__flipper">
+                                <div class="products__front">
+                                    <div class="new-brand new-brand--products">
+                                        new
+                                    </div>
+                                    <div class="products__image">
+                                        <img
+                                            src="img/Perforator_4.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="products__about">
+                                        <h4 class="products__title">
+                                            Перфоратор BOSCH<br />BFG 2000
+                                        </h4>
+                                        <div
+                                            style="opacity: 0"
+                                            class="products__old"
+                                        >
+                                            32500 Р.
+                                        </div>
+                                        <div class="products__label">
+                                            12500 Р.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products__back">
+                                    <div class="new-brand new-brand--products">
+                                        new
+                                    </div>
+                                    <div class="products__buttons-wrapper">
+                                        <div class="products__wrapper-buy-btn">
+                                            <svg class="icon--buy">
+                                                <use
+                                                    href="sprite.svg#cart"
+                                                ></use>
+                                            </svg>
+                                            <button
+                                                class="
+                                                    btn btn__back btn__back--buy
+                                                "
+                                            >
+                                                Купить
+                                            </button>
+                                        </div>
+                                        <button
+                                            class="
+                                                btn
+                                                btn__back
+                                                btn__back--favorites
+                                            "
+                                        >
+                                            В закладки
+                                        </button>
+                                    </div>
+                                    <div class="products__about--back">
+                                        <h4
+                                            class="
+                                                products__title
+                                                products__title--back
+                                            "
+                                        >
+                                            Перфоратор BOSCH<br />BFG 9000
+                                        </h4>
+                                        <div
+                                            class="
+                                                products__label
+                                                products__label--back
+                                            "
+                                        >
+                                            25500 Р.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="popular-fabricators">
+                <div class="container">
+                    <div class="panel">
+                        <h3 class="panel__title">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h3>
+                        <button class="btn btn__panel">
+                            ВСЕ ПРОИЗВОДИТЕЛИ
+                        </button>
+                    </div>
+                    <ul class="popular-fabricators__gallery">
+                        <li class="popular-fabricators__card bosch">
+                            <img src="img/bosch.png" alt="" />
+                        </li>
+                        <li class="popular-fabricators__card makita">
+                            <img src="img/Makita.png" alt="" />
+                        </li>
+                        <li class="popular-fabricators__card dewalt">
+                            <img src="img/DeWALT.png" alt="" />
+                        </li>
+                        <li class="popular-fabricators__card interscoll">
+                            <img src="img/Интерскол.png" alt="" />
+                        </li>
+                        <li class="popular-fabricators__card hitachi">
+                            <img src="img/Hitachi.png" alt="" />
+                        </li>
+                        <li class="popular-fabricators__card lg">
+                            <img src="img/LG.png" alt="" />
+                        </li>
+                        <li class="popular-fabricators__card aeg">
+                            <img src="img/AEG.png" alt="" />
+                        </li>
+                        <li class="popular-fabricators__card metabo">
+                            <img src="img/Metabo.png" alt="" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <article class="service">
+                <div class="container">
+                    <div class="service__wrapper">
+                        <div class="service__header">
+                            <h3 class="service__title">Сервисы</h3>
+                            <p class="service__description">
+                                Хороший интернет-магазин отличается от плохого
+                                не только ценами!<br />
+                                Мы стараемся изо всех сил, чтобы сделать ваши
+                                покупки приятными.
+                            </p>
+                        </div>
+                        <div class="service__content">
+                            <ul class="service__tabs-control">
+                                <li class="service__tab service__tab-active">
+                                    Доставка
+                                </li>
+                                <li class="service__tab">Гарантия</li>
+                                <li class="service__tab">Кредит</li>
+                                <li class="weird-shadow">
+                                    <img src="img/weird-shadow.png" alt="" />
+                                </li>
+                            </ul>
+                            <ul class="service__tabs">
+                                <li class="service-tab__content delivery">
+                                    <div class="service-tab__text">
+                                        <h4 class="service-tab__title">
+                                            Доставка
+                                        </h4>
+                                        <p>
+                                            Мы с удовольствием доставим ваш
+                                            товар прямо<br />
+                                            к вашему подъезду совершенно
+                                            бесплатно!<br />Ведь мы неплохо
+                                            зарабатываем,<br />поднимая его на
+                                            ваш этаж!
+                                        </p>
+                                    </div>
+                                    <div class="service-tab__image">
+                                        <img
+                                            src="img/service-image.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </li>
+                                <li class="service-tab__content guarantee hide">
+                                    <div class="service-tab__text">
+                                        <h4 class="service-tab__title">
+                                            Гарантия
+                                        </h4>
+                                        <p>
+                                            Если купленный у нас товар
+                                            поломается или заискрит,<br />
+                                            а также в случае пожара,
+                                            спровоцированного его
+                                            возгоранием,<br />
+                                            вы всегда можете быть уверены в
+                                            нашей гарантии. Мы обменяем<br />
+                                            сгоревший товар на новый.<br />Дом
+                                            уж восстановите как-нибудь сами.
+                                        </p>
+                                    </div>
+                                    <div class="service-tab__image">
+                                        <img src="img/medal.png" alt="" />
+                                    </div>
+                                </li>
+                                <li class="service-tab__content credit hide">
+                                    <div class="service-tab__text">
+                                        <h4 class="service-tab__title">
+                                            Кредит
+                                        </h4>
+                                        <p>
+                                            Залезть в долговую яму стало
+                                            проще!<br />
+                                            Кредитные консультанты придут вам на
+                                            помощь.
+                                        </p>
+                                        <button class="btn btn__service">
+                                            Отправить заявку
+                                        </button>
+                                    </div>
+                                    <div class="service-tab__image">
+                                        <img src="img/creadit.png" alt="" />
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="information">
+                <div class="container">
+                    <div class="information__wrapper">
+                        <div class="information__company">
+                            <h4 class="information__title">
+                                Компания "marketplace"
+                            </h4>
+                            <div class="information__description">
+                                Настоящий мужской шоппинг начинается здесь!
+                                Огромный выбор товаров для ремонта и <br />
+                                строительства не оставит равнодушными любителей
+                                сэкономить на васянах.
+                            </div>
+                            <div class="information__delivery">
+                                Мы можем доставить ваш товар в самые отдаленные
+                                точки России!<br />
+                                marketplace работает со многими надежными
+                                транспортными компаниями:
+                            </div>
+                            <div class="information__partners">
+                                <div class="information__partner">
+                                    Деловые линии
+                                </div>
+                                <div class="information__partner">
+                                    Автотрейдинг
+                                </div>
+                                <div class="information__partner">
+                                    ЖелДорЭкспедиция
+                                </div>
+                            </div>
+                            <button class="btn btn__information">
+                                Подробнее о компании
+                            </button>
+                        </div>
+                        <div class="information__contacts">
+                            <h4 class="information__contacts-title">
+                                Контакты
+                            </h4>
+                            <p class="information__contacts-description">
+                                Вы можете забрать товар сами,<br />заехав в наш
+                                офис
+                            </p>
+                            <div class="information__contacts-map">
+                                <iframe
+                                    class="information__cards"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d841.3466115386516!2d37.630636483784876!3d55.73893956918486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afd123b7831%3A0xcf308624b96d80e1!2z0KHRgtCw0YDRi9C5INCi0L7Qu9C80LDRh9C10LLRgdC60LjQuSDQv9C10YAuLCAxMSDQutC-0YDQv9GD0YEgNywg0JzQvtGB0LrQstCwLCAxMTUxODQ!5e0!3m2!1sru!2sru!4v1613251397733!5m2!1sru!2sru"
+                                    width="300"
+                                    height="200"
+                                    style="border: 0"
+                                    allowfullscreen=""
+                                    aria-hidden="false"
+                                    tabindex="0"
+                                ></iframe>
+                            </div>
+                            <button class="btn btn__contacts">
+                                заблудились? напишите нам!
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer class="footer">
             <div class="container">
-                <div class="footer__wrapper--bottom">
-                    <div class="footer__copyright">&copy; 2010–2019 Компания «Техномарт» <br>Все права защищены</div>
-                    <nav class="footer__social">
-                        <a class="link__item--footer" href="#">
-                            <svg class="icon--footer">
-                                <use class="use-vk" href="sprite.svg#vk"></use>
-                            </svg>
-                        </a>
-                        <a class="link__item--footer" href="#">
-                            <svg class="icon--footer">
-                                <use href="sprite.svg#facebook"></use>
-                            </svg>
-                        </a>
-                        <a class="link__item--footer" href="#">
-                            <svg class="icon--footer">
-                                <use href="sprite.svg#instagram"></use>
-                            </svg>
-                        </a>
+                <div class="footer__wrapper">
+                    <nav class="footer__nav">
+                        <a class="logo logo--footer" href="index.html"
+                            >MarketPlace</a
+                        >
+                        <ul class="link link--footer">
+                            <li><a class="link__item" href="#">Главная</a></li>
+                            <li><a class="link__item" href="#">Новости</a></li>
+                            <li><a class="link__item" href="#">Каталог</a></li>
+                            <li><a class="link__item" href="#">Доставка</a></li>
+                            <li><a class="link__item" href="#">Контакты</a></li>
+                        </ul>
                     </nav>
-                    <div class="footer__author">
-                        Данный сайт создан исключительно в учебных целях.
-                        Автор не поимел с него ни копейки
+                    <nav class="footer__subnav">
+                        <div class="adress">
+                            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                            <br />+7(999) 999-99-99
+                        </div>
+                        <ul class="link link--subfooter">
+                            <li>
+                                <a
+                                    class="link__item link__item--yellow"
+                                    href="#"
+                                    >Материалы</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="link__item link__item--yellow"
+                                    href="#"
+                                    >Техника</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="link__item link__item--yellow"
+                                    href="#"
+                                    >Инструмент</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="link__item link__item--yellow"
+                                    href="#"
+                                    >Спецпредложения</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__wrapper--bottom">
+                        <div class="footer__copyright">
+                            &copy; 2010–2019 Компания «Техномарт» <br />Все
+                            права защищены
+                        </div>
+                        <nav class="footer__social">
+                            <a class="link__item--footer" href="#">
+                                <svg class="icon--footer">
+                                    <use
+                                        class="use-vk"
+                                        href="sprite.svg#vk"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a class="link__item--footer" href="#">
+                                <svg class="icon--footer">
+                                    <use href="sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="link__item--footer" href="#">
+                                <svg class="icon--footer">
+                                    <use href="sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </nav>
+                        <div class="footer__author">
+                            Данный сайт создан исключительно в учебных целях.
+                            Автор не поимел с него ни копейки
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal modal--write-us" style="display: none">
+            <div class="modal__content">
+                <div class="modal__container">
+                    <div class="modal__main">
+                        <form class="form">
+                            <div class="form__contacts">
+                                <label class="form__label">
+                                    <span class="form__text">Ваше имя:</span>
+                                    <input
+                                        class="form__input"
+                                        type="text"
+                                        placeholder="Имя Фамилия"
+                                        name="name"
+                                    />
+                                </label>
+                                <label class="form__label">
+                                    <span class="form__text">Ваш e-mail:</span>
+                                    <input
+                                        class="form__input"
+                                        type="email"
+                                        placeholder="email@example.com"
+                                        name="email"
+                                    />
+                                </label>
+                            </div>
+                            <div class="form__letter">
+                                <label>
+                                    <span class="form__text"
+                                        >Текст письма:</span
+                                    >
+                                    <textarea
+                                        class="form__textarea"
+                                        name="letter"
+                                        id="textarea"
+                                        cols="30"
+                                        rows="10"
+                                        placeholder="В свободной форме"
+                                    ></textarea>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal__btns">
+                    <div class="modal__bottom-wrapper">
+                        <button class="btn btn__modal btn__write-us">
+                            Отправить
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <div class="modal modal--write-us" style="display: none;">
-        <div class="modal__content">
-            <div class="modal__container">
-                <div class="modal__main">
-                    <form class="form">
-                        <div class="form__contacts">
-                            <label class="form__label">
-                                <span class="form__text">Ваше имя:</span>
-                                <input class="form__input" type="text" placeholder="Имя Фамилия" name="name">
-                            </label>
-                            <label class="form__label">
-                                <span class="form__text">Ваш e-mail:</span>
-                                <input class="form__input" type="email" placeholder="email@example.com" name="email">
-                            </label>
-                        </div>
-                        <div class="form__letter">
-                            <label>
-                                <span class="form__text">Текст письма:</span>
-                                <textarea class="form__textarea" name="letter" id="textarea" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-                            </label>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="modal__btns">
-                <div class="modal__bottom-wrapper">
-                    <button class="btn btn__modal btn__write-us">Отправить</button>
-                </div>
-            </div>
-        </div>
-    </div>
-<script src="js/script.min.js"></script>
-</body>
+        <script src="js/script.min.js"></script>
+    </body>
 </html>
