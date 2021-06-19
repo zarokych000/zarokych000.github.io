@@ -11,6 +11,7 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
             rel="stylesheet"
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.min.css" />
     </head>
     <body>
@@ -74,13 +75,15 @@
                                     Ipsum typesetting
                                 </p>
                             </div>
-                            <form class="form" action="/" method="post">
+                            <form class="form" action="#" method="POST">
                                 <div class="form-element form-element--name">
                                     <input
                                         class="input"
                                         type="text"
-                                        name="text"
+                                        name="name"
                                         placeholder="Full Name"
+                                        minlength="3"
+                                        required="required"
                                     />
                                     <i class="fas fa-user"></i>
                                 </div>
@@ -90,6 +93,7 @@
                                         type="email"
                                         name="email"
                                         placeholder="Email Adress"
+                                        required="required"
                                     />
                                     <i class="fas fa-envelope"></i>
                                 </div>
@@ -99,6 +103,7 @@
                                         type="tel"
                                         name="tel"
                                         placeholder="Phone Number"
+                                        required="required"
                                     />
                                     <i class="fas fa-phone-alt"></i>
                                 </div>
@@ -530,23 +535,27 @@
                             <h1 class="ntt-title">NEWSLETTER</h1>
                             <p>Lorem Ipsum is simply dummy Business industry</p>
                         </div>
-                        <div class="ntt-fbox">
-                            <div class="ntt-input-el ntt-input-el--user">
+                        <form class="form ntt-fbox">
+                            <label class="ntt-input-el ntt-input-el--user">
                                 <input
                                     class="ntt-input-1"
                                     type="text"
+                                    name="name"
                                     placeholder="Name"
                                 />
-                            </div>
-                            <div class="ntt-input-el ntt-input-el--email">
+                            </label>
+                            <label class="ntt-input-el ntt-input-el--email">
                                 <input
                                     class="ntt-input-2"
-                                    type="text"
+                                    type="email"
+                                    name="email"
                                     placeholder="Email Address"
                                 />
-                            </div>
-                            <button class="ntt-button">SUBSCRIBE NOW</button>
-                        </div>
+                            </label>
+                            <button type="submit" class="ntt-button">
+                                SUBSCRIBE NOW
+                            </button>
+                        </form>
                         <div class="ntt-map">
                             <img class="map" src="img/Map.png" alt="" />
                         </div>
