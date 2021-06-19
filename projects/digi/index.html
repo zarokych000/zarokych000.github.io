@@ -1,53 +1,112 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-touch-icon.png">
-        <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./assets/favicon/site.webmanifest">
-        <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#2b4074">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/style/style.min.css">
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#2b4074"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/style/style.min.css" />
         <title>Digital agency</title>
     </head>
     <body>
-        <header class="header">
-            <div class="container">
+        <header class="header" id="home">
+            <div class="container container--header">
                 <div class="header__panel">
                     <a class="logo" href="#">
-                        <img src="./assets/img/logo.png" alt="site logo">
+                        <img src="./assets/img/logo.png" alt="site logo" />
                     </a>
-                    <div class="hamburger">
+                    <button class="hamburger" title="hamburger menu">
                         <span class="hamburger__bar hamburger__bar--top"></span>
-                        <span class="hamburger__bar hamburger__bar--middle"></span>
-                        <span class="hamburger__bar hamburger__bar--bottom"></span>
-                    </div>
+                        <span
+                            class="hamburger__bar hamburger__bar--middle"
+                        ></span>
+                        <span
+                            class="hamburger__bar hamburger__bar--bottom"
+                        ></span>
+                    </button>
                 </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#home">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#service">Сервис</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#our_projects"
+                                >Наши проекты</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#team">Команда</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#last_news"
+                                >Последние новости</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#quotes">Цитаты</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div class="slider">
                 <div class="slider__item">
                     <div class="slider__arrows">
-                        <button class="slider__img-wrapper" aria-label="right slider-arrow">
-                            <svg class="slider__img slider__img--reverse" aria-hidden="true">
+                        <button
+                            class="slider__img-wrapper"
+                            aria-label="right slider-arrow"
+                        >
+                            <svg
+                                class="slider__img slider__img--reverse"
+                                aria-hidden="true"
+                            >
                                 <use href="sprite.svg#arrow"></use>
                             </svg>
                         </button>
-                        <button class="slider__img-wrapper slider__img-wrapper--beige" aria-label="left slider-arrow">
+                        <button
+                            class="
+                                slider__img-wrapper slider__img-wrapper--beige
+                            "
+                            aria-label="left slider-arrow"
+                        >
                             <svg class="slider__img" aria-hidden="true">
                                 <use href="sprite.svg#arrow"></use>
                             </svg>
                         </button>
                     </div>
-                    <h3 class="slider__title">
-                        МЫСЛИ <br>ГЛОБАЛЬНО
-                    </h3>
+                    <h3 class="slider__title">МЫСЛИ <br />ГЛОБАЛЬНО</h3>
                     <p class="slider__descr">
-                        Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении
+                        Di Gі - это диджитал агентство полного цикла,
+                        направленное на самый лучший результат наших клиентов в
+                        маркетинге, продажах и управлении
                     </p>
                     <button class="btn btn__slider">подробнее</button>
                 </div>
@@ -66,7 +125,10 @@
                     </li>
                     <li>
                         <button>
-                            <span class="slider__dot slider__dot--active" aria-hidden="true"></span>
+                            <span
+                                class="slider__dot slider__dot--active"
+                                aria-hidden="true"
+                            ></span>
                             <span class="sr-only">go to slide 3</span>
                         </button>
                     </li>
@@ -75,33 +137,44 @@
             <div class="container">
                 <div class="header__article">
                     <div class="wrapper wrapper--header">
-                        <h3 class="header__title">Вы полюбите нас с первой встречи!</h3>
+                        <h3 class="header__title">
+                            Вы полюбите нас с первой встречи!
+                        </h3>
                         <p class="header__promo">
-                            Мы предоставляем комплексный подход к продвижению компании,<br>
+                            Мы предоставляем комплексный подход к продвижению
+                            компании,<br />
                             продуктов и услуг в цифровой сфере.
                         </p>
                     </div>
-                    <button class="btn btn__callback">
-                        перезвоните мне 
-                    </button>
+                    <button class="btn btn__callback">перезвоните мне</button>
                 </div>
             </div>
         </header>
         <main class="main">
-            <section class="service">
+            <section class="service" id="service">
                 <div class="container container--service">
                     <div class="service__header">
                         <div class="wrapper wrapper--service">
                             <h2 class="service__title">Сервис</h2>
-                            <h3 class="service__subtitle">От идеи до незабываемого и измеримого результата.</h3>
-                            <p class="service__descr">Интеграция безупречного производства, передовых технологий и тщательного измерения производительности</p>
+                            <h3 class="service__subtitle">
+                                От идеи до незабываемого и измеримого
+                                результата.
+                            </h3>
+                            <p class="service__descr">
+                                Интеграция безупречного производства, передовых
+                                технологий и тщательного измерения
+                                производительности
+                            </p>
                         </div>
                     </div>
                     <div class="service__cards">
                         <div class="service-card">
                             <div class="service-card__wrapper">
                                 <div class="service-card__image">
-                                    <img src="./assets/img/icons/strategy.svg" alt="strategy">
+                                    <img
+                                        src="./assets/img/icons/strategy.svg"
+                                        alt="strategy"
+                                    />
                                 </div>
                                 <h3 class="service-card__title">Стратегия</h3>
                             </div>
@@ -109,7 +182,10 @@
                         <div class="service-card">
                             <div class="service-card__wrapper">
                                 <div class="service-card__image">
-                                    <img src="./assets/img/icons/analisis.svg" alt="analysis">
+                                    <img
+                                        src="./assets/img/icons/analisis.svg"
+                                        alt="analysis"
+                                    />
                                 </div>
                                 <h3 class="service-card__title">Анализ</h3>
                             </div>
@@ -117,7 +193,10 @@
                         <div class="service-card">
                             <div class="service-card__wrapper">
                                 <div class="service-card__image">
-                                    <img src="./assets/img/icons/social-medias.svg" alt="social medias">
+                                    <img
+                                        src="./assets/img/icons/social-medias.svg"
+                                        alt="social medias"
+                                    />
                                 </div>
                                 <h3 class="service-card__title">Соц сети</h3>
                             </div>
@@ -125,7 +204,10 @@
                         <div class="service-card">
                             <div class="service-card__wrapper">
                                 <div class="service-card__image">
-                                    <img src="./assets/img/icons/development.svg" alt="development">
+                                    <img
+                                        src="./assets/img/icons/development.svg"
+                                        alt="development"
+                                    />
                                 </div>
                                 <h3 class="service-card__title">Развитие</h3>
                             </div>
@@ -133,7 +215,10 @@
                         <div class="service-card">
                             <div class="service-card__wrapper">
                                 <div class="service-card__image">
-                                    <img src="./assets/img/icons/content.svg" alt="content">
+                                    <img
+                                        src="./assets/img/icons/content.svg"
+                                        alt="content"
+                                    />
                                 </div>
                                 <h3 class="service-card__title">Контент</h3>
                             </div>
@@ -141,25 +226,40 @@
                         <div class="service-card">
                             <div class="service-card__wrapper">
                                 <div class="service-card__image">
-                                    <img src="./assets/img/icons/ux-design.svg" alt="ux design">
+                                    <img
+                                        src="./assets/img/icons/ux-design.svg"
+                                        alt="ux design"
+                                    />
                                 </div>
                                 <h3 class="service-card__title">Дизайн UX</h3>
-                                <p class="service-card__descr">Создадим уникальный и удобный дизайн...</p>
-                                <a class="service-card__link" href="#">Подробнее</a>
+                                <p class="service-card__descr">
+                                    Создадим уникальный и удобный дизайн...
+                                </p>
+                                <a class="service-card__link" href="#"
+                                    >Подробнее</a
+                                >
                             </div>
                         </div>
                         <div class="service-card">
                             <div class="service-card__wrapper">
                                 <div class="service-card__image">
-                                    <img src="./assets/img/icons/targeted-adevert.svg" alt="targeted advertising">
+                                    <img
+                                        src="./assets/img/icons/targeted-adevert.svg"
+                                        alt="targeted advertising"
+                                    />
                                 </div>
-                                <h3 class="service-card__title">Таргетированная реклама</h3>
+                                <h3 class="service-card__title">
+                                    Таргетированная реклама
+                                </h3>
                             </div>
                         </div>
                         <div class="service-card">
                             <div class="service-card__wrapper">
                                 <div class="service-card__image">
-                                    <img src="./assets/img/icons/product.svg" alt="product">
+                                    <img
+                                        src="./assets/img/icons/product.svg"
+                                        alt="product"
+                                    />
                                 </div>
                                 <h3 class="service-card__title">Продукт</h3>
                             </div>
@@ -167,7 +267,7 @@
                     </div>
                 </div>
             </section>
-            <section class="projects">
+            <section class="projects" id="our_projects">
                 <div class="container">
                     <h2 class="projects__title">Наши Проекты</h2>
                     <ul class="projects__list">
@@ -175,35 +275,75 @@
                             <div class="project-item__inner">
                                 <div class="project-item__info-mask">
                                     <div class="project-item__icons-wrapper">
-                                        <img class="project-item__icon" src="assets/img/icons/search.svg" alt="">
-                                        <img class="project-item__icon" src="assets/img/icons/magnifiying-glass.svg" alt="">
+                                        <img
+                                            class="project-item__icon"
+                                            src="assets/img/icons/search.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="project-item__icon"
+                                            src="assets/img/icons/magnifiying-glass.svg"
+                                            alt=""
+                                        />
                                     </div>
                                 </div>
-                                <img class="project-item__image" src="assets/img/projects-1.jpg" alt="lalique boutique showcase">
+                                <img
+                                    class="project-item__image"
+                                    src="assets/img/projects-1.jpg"
+                                    alt="lalique boutique showcase"
+                                />
                             </div>
-                            <h3 class="project-item__subtitle">Lalique бутик</h3>
+                            <h3 class="project-item__subtitle">
+                                Lalique бутик
+                            </h3>
                         </li>
                         <li class="project-item">
                             <div class="project-item__inner">
                                 <div class="project-item__info-mask">
                                     <div class="project-item__icons-wrapper">
-                                        <img class="project-item__icon" src="assets/img/icons/search.svg" alt="">
-                                        <img class="project-item__icon" src="assets/img/icons/magnifiying-glass.svg" alt="">
+                                        <img
+                                            class="project-item__icon"
+                                            src="assets/img/icons/search.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="project-item__icon"
+                                            src="assets/img/icons/magnifiying-glass.svg"
+                                            alt=""
+                                        />
                                     </div>
                                 </div>
-                                <img class="project-item__image" src="assets/img/projects-2.jpg" alt="example of houses we build">
+                                <img
+                                    class="project-item__image"
+                                    src="assets/img/projects-2.jpg"
+                                    alt="example of houses we build"
+                                />
                             </div>
-                            <h3 class="project-item__subtitle">Строительство домов</h3>
+                            <h3 class="project-item__subtitle">
+                                Строительство домов
+                            </h3>
                         </li>
                         <li class="project-item">
                             <div class="project-item__inner">
                                 <div class="project-item__info-mask">
                                     <div class="project-item__icons-wrapper">
-                                        <img class="project-item__icon" src="assets/img/icons/search.svg" alt="">
-                                        <img class="project-item__icon" src="assets/img/icons/magnifiying-glass.svg" alt="">
+                                        <img
+                                            class="project-item__icon"
+                                            src="assets/img/icons/search.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="project-item__icon"
+                                            src="assets/img/icons/magnifiying-glass.svg"
+                                            alt=""
+                                        />
                                     </div>
                                 </div>
-                                <img class="project-item__image" src="assets/img/projects-3.jpg" alt="cozy coffee shop interior">
+                                <img
+                                    class="project-item__image"
+                                    src="assets/img/projects-3.jpg"
+                                    alt="cozy coffee shop interior"
+                                />
                             </div>
                             <h3 class="project-item__subtitle">Кофейня</h3>
                         </li>
@@ -211,104 +351,159 @@
                             <div class="project-item__inner">
                                 <div class="project-item__info-mask">
                                     <div class="project-item__icons-wrapper">
-                                        <img class="project-item__icon" src="assets/img/icons/search.svg" alt="">
-                                        <img class="project-item__icon" src="assets/img/icons/magnifiying-glass.svg" alt="">
+                                        <img
+                                            class="project-item__icon"
+                                            src="assets/img/icons/search.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="project-item__icon"
+                                            src="assets/img/icons/magnifiying-glass.svg"
+                                            alt=""
+                                        />
                                     </div>
                                 </div>
-                                <img class="project-item__image" src="assets/img/projects-4.jpg" alt="wave-washed tropical island full of greenery and covered with mountains long from greenery">
+                                <img
+                                    class="project-item__image"
+                                    src="assets/img/projects-4.jpg"
+                                    alt="wave-washed tropical island full of greenery and covered with mountains long from greenery"
+                                />
                             </div>
-                            <h3 class="project-item__subtitle">Уникальные туры</h3>
+                            <h3 class="project-item__subtitle">
+                                Уникальные туры
+                            </h3>
                         </li>
                     </ul>
                 </div>
             </section>
-            <section class="team">
+            <section class="team" id="team">
                 <div class="container">
                     <div class="team__content">
                         <div class="team__img-wrapper">
-                            <img class="team__img" src="assets/img/team.jpg" alt="our team meeting">
+                            <img
+                                class="team__img"
+                                src="assets/img/team.jpg"
+                                alt="our team meeting"
+                            />
                         </div>
                         <div class="team__text-wrapper">
                             <h2 class="team__title">Команда</h2>
                             <p class="team__desr">
-                                Наша команда - это наша самая большая ценность.<br>
-                                Мы трудились, чтобы собрать группу  экспертов,<br>
-                                чьи навыки дополняют друг друга. <br>
-                                У членов нашей команды разные истории, но мы разделяем общую страсть к идеалу. Мы верим, чтобы оставаться<br>
-                                профессионалом, нужно развиваться, 
-                                поэтому мы постоянно ищем способы, как стать лучше <br>
+                                Наша команда - это наша самая большая
+                                ценность.<br />
+                                Мы трудились, чтобы собрать группу экспертов,<br />
+                                чьи навыки дополняют друг друга. <br />
+                                У членов нашей команды разные истории, но мы
+                                разделяем общую страсть к идеалу. Мы верим,
+                                чтобы оставаться<br />
+                                профессионалом, нужно развиваться, поэтому мы
+                                постоянно ищем способы, как стать лучше <br />
                                 в том, что мы делаем.
                             </p>
-                        <button class="btn btn__watch">СМОТРЕТЬ ВИДЕО</button>
+                            <button class="btn btn__watch">
+                                СМОТРЕТЬ ВИДЕО
+                            </button>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="news">
+            <section class="news" id="last_news">
                 <div class="container container--news">
                     <h2 class="news__title">Последние Новости</h2>
                     <ul class="news__list">
                         <li class="news-item news-item--3d-brending">
                             <div class="news-item__image">
-                                <img src="./assets/img/news-1.jpg" alt="medieval castl encircled with forest that come out from phone screen">
+                                <img
+                                    src="./assets/img/news-1.jpg"
+                                    alt="medieval castl encircled with forest that come out from phone screen"
+                                />
                             </div>
                             <h3 class="news-item__title">3Д в брендинге</h3>
                         </li>
                         <li class="news-item news-item--context">
                             <div class="news-item__image">
-                                <img src="./assets/img/news-2.jpg" alt="person who points out on graph on the screen">
+                                <img
+                                    src="./assets/img/news-2.jpg"
+                                    alt="person who points out on graph on the screen"
+                                />
                             </div>
-                            <h3 class="news-item__title">Контекстная реклама</h3>
+                            <h3 class="news-item__title">
+                                Контекстная реклама
+                            </h3>
                         </li>
                         <li class="news-item news-item--graph">
                             <div class="news-item__image">
-                                <img src="./assets/img/news-3.jpg" alt="modern style picture deer antler">
+                                <img
+                                    src="./assets/img/news-3.jpg"
+                                    alt="modern style picture deer antler"
+                                />
                             </div>
                             <h3 class="news-item__title">Графика</h3>
                         </li>
                         <li class="news-item news-item--coorp-culture">
                             <div class="news-item__image">
-                                <img src="./assets/img/news-4.jpg" alt="couple of people which are doing work">
+                                <img
+                                    src="./assets/img/news-4.jpg"
+                                    alt="couple of people which are doing work"
+                                />
                             </div>
-                            <h3 class="news-item__title">Коорпоративная культура</h3>
+                            <h3 class="news-item__title">
+                                Коорпоративная культура
+                            </h3>
                         </li>
                         <li class="news-item news-item--unique-design">
                             <div class="news-item__image">
-                                <img src="./assets/img/news-5.jpg" alt="killer whale jumping out of the ocean">
+                                <img
+                                    src="./assets/img/news-5.jpg"
+                                    alt="killer whale jumping out of the ocean"
+                                />
                             </div>
                             <h3 class="news-item__title">Уникальный дизайн</h3>
                         </li>
                         <li class="news-item news-item--glare-from-side">
                             <div class="news-item__image">
-                                <img src="./assets/img/news-6.jpg" alt="girl with a mysterious look">
+                                <img
+                                    src="./assets/img/news-6.jpg"
+                                    alt="girl with a mysterious look"
+                                />
                             </div>
                             <h3 class="news-item__title">Взгляд со стороны</h3>
                         </li>
                         <li class="news-item news-item--social-media">
                             <div class="news-item__image">
-                                <img src="./assets/img/news-7.jpg" alt="photos of people which located in half circle">
+                                <img
+                                    src="./assets/img/news-7.jpg"
+                                    alt="photos of people which located in half circle"
+                                />
                             </div>
-                            <h3 class="news-item__title">Соц сети и их польза</h3>
+                            <h3 class="news-item__title">
+                                Соц сети и их польза
+                            </h3>
                         </li>
                         <li class="news-item news-item--exqlusive">
                             <div class="news-item__image">
-                                <img src="./assets/img/news-8.jpg" alt="black person in north forest">
+                                <img
+                                    src="./assets/img/news-8.jpg"
+                                    alt="black person in north forest"
+                                />
                             </div>
                             <h3 class="news-item__title">Эксклюзивность</h3>
                         </li>
                     </ul>
                 </div>
             </section>
-            <section class="quote">
+            <section class="quote" id="quotes">
                 <div class="container">
                     <div class="quote__wrapper">
                         <div class="quote__quote">
-                            <img src="assets/img/icons/quote.svg" alt="">
+                            <img src="assets/img/icons/quote.svg" alt="" />
                         </div>
                         <div class="quote__content">
                             <p class="quote__text">
-                                Если нужно создавать либо повышать имидж компании, <br>
-                                то <span>диджитал-маркетинг</span> является наиболее подходящим
+                                Если нужно создавать либо повышать имидж
+                                компании, <br />
+                                то <span>диджитал-маркетинг</span> является
+                                наиболее подходящим
                             </p>
                             <h4 class="quote__author">- Маргарита Акулич</h4>
                         </div>
@@ -324,25 +519,44 @@
         <footer class="footer">
             <div class="container">
                 <div class="logo logo--footer">
-                    <img src="./assets/img/logo.png" alt="">
+                    <img src="./assets/img/logo.png" alt="" />
                 </div>
                 <p class="footer__text">
-                    Мы хотели бы услышать все о вашем проекте.
-                    Свяжись с нами.
+                    Мы хотели бы услышать все о вашем проекте. Свяжись с нами.
                 </p>
                 <nav class="links links--social">
                     <ul class="links__list links__list--icons">
                         <li class="links__icon">
-                            <img src="assets/img/icons/facebook-icon.svg" alt="facebook icon">
+                            <a href="https://www.facebook.com/">
+                                <img
+                                    src="assets/img/icons/facebook-icon.svg"
+                                    alt="facebook icon"
+                                />
+                            </a>
                         </li>
                         <li class="links__icon">
-                            <img src="assets/img/icons/google-icon.svg" alt="google icon">
+                            <a href="https://www.google.ru/">
+                                <img
+                                    src="assets/img/icons/google-icon.svg"
+                                    alt="google icon"
+                                />
+                            </a>
                         </li>
                         <li class="links__icon">
-                            <img src="assets/img/icons/twitter-icon.svg" alt="twitter icon">
+                            <a href="https://twitter.com">
+                                <img
+                                    src="assets/img/icons/twitter-icon.svg"
+                                    alt="twitter icon"
+                                />
+                            </a>
                         </li>
                         <li class="links__icon">
-                            <img src="assets/img/icons/pinterest-icon.svg" alt="pinterest icon">
+                            <a href="https://www.pinterest.ru/">
+                                <img
+                                    src="assets/img/icons/pinterest-icon.svg"
+                                    alt="pinterest icon"
+                                />
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -375,7 +589,10 @@
             <div class="footer__top">
                 <div class="container container--bottom">
                     <span class="footer__span">Вверх</span>
-                    <button class="footer__arrow" aria-label="to start of website"></button>
+                    <button
+                        class="footer__arrow"
+                        aria-label="to start of website"
+                    ></button>
                 </div>
             </div>
         </footer>
