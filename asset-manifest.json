@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.9d377263.chunk.css",
-    "main.js": "/static/js/main.d7aa2edc.chunk.js",
-    "main.js.map": "/static/js/main.d7aa2edc.chunk.js.map",
+    "main.js": "/static/js/main.40529730.chunk.js",
+    "main.js.map": "/static/js/main.40529730.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b83279d6.js",
     "runtime-main.js.map": "/static/js/runtime-main.b83279d6.js.map",
     "static/css/2.679831fc.chunk.css": "/static/css/2.679831fc.chunk.css",
@@ -40,13 +40,13 @@
     "static/media/vk.b67aacb7.svg": "/static/media/vk.b67aacb7.svg",
     "static/media/webpack.8dcf468d.svg": "/static/media/webpack.8dcf468d.svg",
     "static/media/zet.e99365a6.jpg": "/static/media/zet.e99365a6.jpg",
-    "static/media/zonex-preview.dd7190a8.png": "/static/media/zonex-preview.dd7190a8.png"
+    "static/media/zonex-preview.9569a1ae.jpg": "/static/media/zonex-preview.9569a1ae.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b83279d6.js",
     "static/css/2.679831fc.chunk.css",
     "static/js/2.673bc39e.chunk.js",
     "static/css/main.9d377263.chunk.css",
-    "static/js/main.d7aa2edc.chunk.js"
+    "static/js/main.40529730.chunk.js"
   ]
 }
