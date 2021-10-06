@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="./apple-touch-icon.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./favicon-32x32.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="./favicon-16x16.png"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>Zonex</title>
+</head>
+<body>
+    <header class="header header--diff">
+        <div class="container container--norm header__container">
+            <div class="mob-header">
+                <a class="logo mob-header__logo" href="#" aria-label="logo">
+                    <svg class="sprite logo__sprite">
+                        <use xlink:href="img/sprite.svg#logo-zonex"></use>
+                    </svg>
+                </a>
+                <button class="btn--reset hamburger hamburger--open">
+                    <svg class="hamburger__icon hamburger__arrow">
+                       <use xlink:href='img/sprite.svg#angle-arrow-down'></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="header__wrapper header__wrapper--active">
+                <nav class="nav header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item main-link">
+                            <a class="nav__link" href="#">Home</a>
+                        </li>
+                        <li class="nav__item main-link main-link--current">
+                            <a class="nav__link" href="#">Shop</a>
+                        </li>
+                        <li class="nav__item main-link">
+                            <a class="nav__link" href="#">Elements</a>
+                        </li>
+                        <li class="nav__item main-link">
+                            <a class="nav__link" href="#">Blog</a>
+                        </li>
+                        <li class="nav__item main-link">
+                            <a class="nav__link" href="#">Page</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="logo header__logo" href="#" aria-label="logo">
+                    <svg class="sprite logo__sprite">
+                        <use xlink:href="img/sprite.svg#logo-zonex"></use>
+                    </svg>
+                </a>
+                <ul class="header__tools">
+                    <li class="header__tool">
+                        <form class="search-form" action="#">
+                            <input
+                                class="search-form__input"
+                                type="text"
+                                aria-label="find"
+                            />
+                            <button
+                                class="search-form__btn btn--reset"
+                                aria-label="click to find"
+                                type="submit"
+                            >
+                                <svg>
+                                   <use xlink:href='img/sprite.svg#search'></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </li>
+                    <li class="header__tool">
+                        <a href="#" aria-label="your account">
+                            <svg>
+                               <use xlink:href='img/sprite.svg#stick-man'></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__tool">
+                        <a href="#" aria-label="shopping cart">
+                            <span class="shopping-cart__img-wrapper">
+                                <svg>
+                                   <use xlink:href='img/sprite.svg#shopping-bag'></use>
+                                </svg>
+                            </span>
+                            <span class="bag__digit">3</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main main--product">
+        <div class="shop-items__control">
+            <div class="container container--norm">
+                <ol class="breadcrumbs shop-items__breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#">Main</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#">Jacket</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#">Band-collar popover tunic</a>
+                    </li>
+                </ol>
+                <div class="shop-items__orientation">
+                    <button class="shop-items__btn shop-items__prev">
+                        prev
+                    </button>
+                    <button class="shop-items__btn shop-items__next">
+                        next
+                    </button>
+                </div>
+            </div>
+        </div>
+        <article class="shop-item">
+            <div class="container container--big">
+                <div class="container container--norm">
+                    <div class="shop-item__content">
+                        <div class="gallery shop-item__gallery">
+                            <ul class="gallery__nav">
+                                <li class="gallery__nav-item gallery__nav-item--active">
+                                    <img class="gallery__img" src="./img/main-thumbnail.jpg" alt="">
+                                </li>
+                                <li class="gallery__nav-item">
+                                    <img class="gallery__img" src="./img/thumbnail-2.jpg" alt="">
+                                </li>
+                                <li class="gallery__nav-item">
+                                    <img class="gallery__img" src="./img/thumbnail-3.jpg" alt="">
+                                </li>
+                                <li class="gallery__nav-item">
+                                    <img class="gallery__img" src="./img/thumbnail-7.jpg" alt="">
+                                </li>
+                                <li class="gallery__nav-item">
+                                    <img class="gallery__img" src="./img/thumbnail-5.jpg" alt="">
+                                </li>
+                            </ul>
+                            <div class="gallery__main-window">
+                                <img class="gallery__img" src="./img/main-thumbnail.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="shop-item__info">
+                            <div class="shop-item__section">
+                                <div class="shop-item__marker">
+                                    <span class="shop-item__img"></span>
+                                    <span class="shop-item__text">best seller</span>
+                                </div>
+                                <h1 class="shop-item__title">Band-collar popover tunic</h1>
+                                <div class="shop-item__rating">
+                                    <ol class="shop-item__stars">
+                                        <li class="shop-item__star shop-item__star--active">
+                                        </li>
+                                        <li class="shop-item__star shop-item__star--active">
+                                        </li>
+                                        <li class="shop-item__star shop-item__star--active">
+                                        </li>
+                                        <li class="shop-item__star shop-item__star--active">
+                                        </li>
+                                        <li class="shop-item__star">
+                                        </li>
+                                    </ol>
+                                    <p class="shop-item__reviews">
+                                        <span class="shop-item__countity">2</span>
+                                        Reviews
+                                    </p>
+                                </div>
+                                <div class="shop-item__prices">
+                                    <div class="shop-item__current-price">$128.00</div>
+                                    <div class="shop-item__old-price">$165.00</div>
+                                </div>
+                                <p class="shop-item__short-descr">We love the dramatic ruffle details down the sleeve, delicate fabric buttons and polished cuffs </p>
+                            </div>
+                            <div class="shop-item__section">
+                                <div class="shop-item__i-item">
+                                    color:
+                                    <span class="chosen">green</span>
+                                </div>
+                                <ul class="chose-color">
+                                    <li class="chose-color__item">
+                                        <button class="btn--reset chose-color__btn" data-color="red" title="chose red color"></button>
+                                    </li>
+                                    <li class="chose-color__item">
+                                        <button class="btn--reset chose-color__btn" data-color="orange" title="chose orange color"></button>
+                                    </li>
+                                    <li class="chose-color__item chose-color__item--chosen">
+                                        <button class="btn--reset chose-color__btn" data-color="green" title="chose green color"></button>
+                                    </li>
+                                    <li class="chose-color__item">
+                                        <button class="btn--reset chose-color__btn" data-color="white" title="chose white color"></button>
+                                    </li>
+                                    <li class="chose-color__item">
+                                        <button class="btn--reset chose-color__btn" data-color="black" title="chose black color"></button>
+                                    </li>
+                                    <li class="chose-color__item">
+                                        <button class="btn--reset chose-color__btn" data-color="brown" title="chose brown color"></button>
+                                    </li>
+                                    <li class="chose-color__item">
+                                        <button class="btn--reset chose-color__btn" data-color="purple" title="chose purple color"></button>
+                                    </li>
+                                    <li class="chose-color__item">
+                                        <button class="btn--reset chose-color__btn" data-color="gray" title="chose gray color"></button>
+                                    </li>
+                                </ul>
+                                <div class="shop-item__sizes">
+                                    <div class="shop-item__sizes-titles">
+                                        <div class="shop-item__i-item">
+                                            size:
+                                            <span class="chosen">Select a size</span>
+                                        </div>
+                                        <div class="shop-item__sizes-title">size charts</div>
+                                    </div>
+                                    <ol class="chose-size">
+                                        <li class="chose-size__item">
+                                            <button class="btn--reset chose-size__btn" data-size="23" title="chose 23 size">23</button>
+                                        </li>
+                                        <li class="chose-size__item">
+                                            <button class="btn--reset chose-size__btn" data-size="24" title="chose 24 size">24</button>
+                                        </li>
+                                        <li class="chose-size__item">
+                                            <button class="btn--reset chose-size__btn" data-size="25" title="chose 25 size">25</button>
+                                        </li>
+                                        <li class="chose-size__item">
+                                            <button class="btn--reset chose-size__btn" data-size="26" title="chose 26 size">26</button>
+                                        </li>
+                                        <li class="chose-size__item">
+                                            <button class="btn--reset chose-size__btn" data-size="27" title="chose 27 size">27</button>
+                                        </li>
+                                        <li class="chose-size__item">
+                                            <button class="btn--reset chose-size__btn" data-size="28" title="chose 28 size">28</button>
+                                        </li>
+                                        <li class="chose-size__item">
+                                            <button class="btn--reset chose-size__btn" data-size="29" title="chose 29 size">29</button>
+                                        </li>
+                                        <li class="chose-size__item">
+                                            <button class="btn--reset chose-size__btn" data-size="30" title="chose 30 size">30</button>
+                                        </li>
+                                        <li class="chose-size__item">
+                                            <button class="btn--reset chose-size__btn" data-size="31" title="chose 31 size">31</button>
+                                        </li>
+                                    </ol>
+                                    <button class="shop-item__clear"><span class="shop-item__cross"></span>Clear</button>
+                                </div>
+                            </div>
+                            <div class="shop-item__section">
+                                <div class="btn--reset stepper" aria-label="chose product countity">
+                                    <span class="stepper__ico stepper__minus"></span>
+                                    <input class="stepper__input" type="text" value="1" aria-label="enter product countity"> 
+                                    <span class="stepper__ico stepper__plus"></span>
+                                </div>
+                                <button class="shop-item__btn shop-item__btn--black">Add to cart</button>
+                                <button class="shop-item__btn">Add to wishlist</button>
+                            </div>
+                            <div class="shop-item__section">
+                                <div class="shop-item__data">
+                                    <div class="shop-item__i-item">
+                                        sku:
+                                        <span class="chosen">fw511</span>
+                                    </div>
+                                    <div class="shop-item__i-item">
+                                        category:
+                                        <span class="chosen">trousers, life style</span>
+                                    </div>
+                                    <div class="shop-item__i-item">
+                                        tags:
+                                        <span class="chosen">designer, women</span>
+                                    </div>
+                                </div>
+                                <div class="shop-item__socials">
+                                    share:
+                                    <ul class="social">
+                                        <li class="social__link">
+                                            <a href="#" aria-label="link to twitter"
+                                                ><img src="./img/kz-twitter.png" alt=""
+                                            /></a>
+                                        </li>
+                                        <li class="social__link">
+                                            <a href="#" aria-label="link to facebook"
+                                                ><img src="./img/kz-facebook.png" alt=""
+                                            /></a>
+                                        </li>
+                                        <li class="social__link">
+                                            <a href="#" aria-label="link to instagram"
+                                                ><img src="./img/kz-instagram.png" alt=""
+                                            /></a>
+                                        </li>
+                                        <li class="social__link">
+                                            <a href="#" aria-label="link to pintrest"
+                                                ><img src="./img/kz-pinterest.png" alt=""
+                                            /></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs shop-item__tabs">
+                        <ul class="tabs__controls">
+                            <li class="tabs__control"><button class="btn--reset tabs__btn tabs__btn--active">Description</button></li>
+                            <li class="tabs__control"><button class="btn--reset tabs__btn">Additional information</button></li>
+                            <li class="tabs__control"><button class="btn--reset tabs__btn">Reviews</button></li>
+                        </ul>
+                        <div class="tabs__contents">
+                            <div class="tabs__content tabs__content--active">
+                                <p class="tabs__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus eius quos repellat explicabo consequatur dolores illo nisi minima quibusdam quisquam. Nam, aliquam odio? Cupiditate voluptate dolorum, eaque dicta iste iusto.
+                                    Eveniet officia ducimus placeat provident unde doloribus deleniti ipsam recusandae sunt sequi voluptatem corporis debitis repellat fuga qui dolorem omnis, deserunt obcaecati atque eius quibusdam, consectetur laudantium. Natus, consectetur sunt?
+                                    Dicta maxime delectus aliquam tempora similique dolores earum voluptate quasi. Magni libero, iure, expedita optio ad earum voluptatibus ducimus delectus eaque omnis alias corrupti maxime ratione, deleniti quisquam explicabo dolor.
+                                </p>
+                                <p class="tabs__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus eius quos repellat explicabo consequatur dolores illo nisi minima quibusdam quisquam. Nam, aliquam odio? Cupiditate voluptate dolorum, eaque dicta iste iusto.
+                                    Eveniet officia ducimus placeat provident unde doloribus deleniti ipsam recusandae sunt sequi voluptatem corporis debitis repellat fuga qui dolorem
+                                </p>
+                            </div>
+                            <div class="tabs__content">
+                                <p class="tabs__text">
+                                    (Additional information) consectetur adipisicing elit. Doloribus eius quos repellat explicabo consequatur dolores illo nisi minima quibusdam quisquam. Nam, aliquam odio? Cupiditate voluptate dolorum, eaque dicta iste iusto.
+                                    Eveniet officia ducimus placeat provident unde doloribus deleniti ipsam recusandae sunt sequi voluptatem corporis debitis repellat fuga qui dolorem omnis, deserunt obcaecati atque eius quibusdam, consectetur laudantium. Natus, consectetur sunt?
+                                    Dicta maxime delectus aliquam tempora similique dolores earum voluptate quasi. Magni libero, iure, expedita optio ad earum voluptatibus ducimus delectus eaque omnis alias corrupti maxime ratione, deleniti quisquam explicabo dolor.
+                                </p>
+                                <p class="tabs__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus eius quos repellat explicabo consequatur dolores illo nisi minima quibusdam quisquam. Nam, aliquam odio? Cupiditate voluptate dolorum, eaque dicta iste iusto.
+                                    Eveniet officia ducimus placeat provident unde doloribus deleniti ipsam recusandae sunt sequi voluptatem corporis debitis repellat fuga qui dolorem
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus eius quos repellat explicabo consequatur dolores illo nisi minima quibusdam quisquam. Nam, aliquam odio? Cupiditate voluptate dolorum, eaque dicta iste iusto.
+                                    Eveniet officia ducimus placeat provident unde doloribus deleniti ipsam recusandae sunt sequi voluptatem corporis debitis repellat fuga qui dolorem
+                                </p>
+                            </div>
+                            <div class="tabs__content">
+                                <p class="tabs__text">
+                                    (Reviews) amet consectetur adipisicing elit. Doloribus eius quos repellat explicabo consequatur dolores illo nisi minima quibusdam quisquam. Nam, aliquam odio? Cupiditate voluptate dolorum, eaque dicta iste iusto.
+                                    Eveniet officia ducimus placeat provident unde doloribus deleniti ipsam recusandae sunt sequi voluptatem corporis debitis repellat fuga qui dolorem omnis, deserunt obcaecati atque eius quibusdam, consectetur laudantium. Natus, consectetur sunt?
+                                    Dicta maxime delectus aliquam tempora similique dolores earum voluptate quasi. Magni libero, iure, expedita optio ad earum voluptatibus ducimus delectus eaque omnis alias corrupti maxime ratione, deleniti quisquam explicabo dolor.
+                                </p>
+                                <p class="tabs__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus eius quos repellat explicabo consequatur dolores illo nisi minima quibusdam quisquam. Nam, aliquam odio? Cupiditate voluptate dolorum, eaque dicta iste iusto.
+                                    Eveniet officia ducimus placeat provident unde doloribus deleniti ipsam recusandae sunt sequi voluptatem corporis debitis repellat fuga qui dolorem
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus eius quos repellat explicabo consequatur dolores illo nisi minima quibusdam quisquam. Nam, aliquam odio? Cupiditate voluptate dolorum, eaque dicta iste iusto.
+                                    Eveniet officia ducimus placeat provident unde doloribus deleniti ipsam recusandae sunt sequi voluptatem corporis debitis repellat fuga qui dolorem
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus eius quos repellat explicabo consequatur dolores illo nisi minima quibusdam quisquam. Nam, aliquam odio? Cupiditate voluptate dolorum, eaque dicta iste iusto.
+                                    Eveniet officia ducimus placeat provident unde doloribus deleniti ipsam recusandae sunt sequi voluptatem corporis debitis repellat fuga qui dolorem
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="related">
+            <div class="container container--norm">
+                <h2 class="related__title">Related Products</h2>
+                <div class="related__slider">
+                    <div class="swiper-wrapper">
+                        <article class="product related__item swiper-slide">
+                            <div class="product__image-wrapper">
+                                <img class="product__image" src="./img/product-1.jpg" alt=""/>
+                            </div>
+                            <div class="product__text-content">
+                                <div class="product__modificator new">
+                                    new
+                                </div>
+                                <h4 class="product__title">
+                                    Eye Mesh Boat Shoes
+                                </h4>
+                                <div class="product__control">
+                                    <p class="product__price">$220.00</p>
+                                    <div class="product__cart">
+                                        <p>Add to cart</p>
+                                        <div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-search-space.png" alt=""/>
+                                            </div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-heart.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product related__item swiper-slide">
+                            <div class="product__image-wrapper">
+                                <img class="product__image" src="./img/product-2.jpg" alt=""/>
+                            </div>
+                            <div class="product__text-content">
+                                <h4 class="product__title">
+                                    Azure Tote
+                                </h4>
+                                <div class="product__control">
+                                    <p class="product__price">$290.00</p>
+                                    <div class="product__cart">
+                                        <p>Add to cart</p>
+                                        <div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-search-space.png" alt=""/>
+                                            </div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-heart.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product related__item swiper-slide">
+                            <div class="product__image-wrapper">
+                                <img class="product__image" src="./img/product-3.jpg" alt=""/>
+                            </div>
+                            <div class="product__text-content">
+                                <h4 class="product__title">
+                                    Blue Raincoat
+                                </h4>
+                                <div class="product__control">
+                                    <p class="product__price">$430.00</p>
+                                    <div class="product__cart">
+                                        <p>Add to cart</p>
+                                        <div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-search-space.png" alt=""/>
+                                            </div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-heart.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product related__item swiper-slide">
+                            <div class="product__image-wrapper">
+                                <img class="product__image" src="./img/product-4.jpg" alt=""/>
+                            </div>
+                            <div class="product__text-content">
+                                <div class="product__modificator best">
+                                    best seller
+                                </div>                                    
+                                <h4 class="product__title">
+                                    Backpack with contrasting buckle
+                                </h4>
+                                <div class="product__control">
+                                    <p class="product__price">$80.00 - $125.00</p>
+                                    <div class="product__cart">
+                                        <p>Add to cart</p>
+                                        <div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-search-space.png" alt=""/>
+                                            </div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-heart.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product related__item swiper-slide">
+                            <div class="product__image-wrapper">
+                                <img class="product__image" src="./img/product-3.jpg" alt=""/>
+                            </div>
+                            <div class="product__text-content">
+                                <h4 class="product__title">
+                                    Blue Raincoat
+                                </h4>
+                                <div class="product__control">
+                                    <p class="product__price">$430.00</p>
+                                    <div class="product__cart">
+                                        <p>Add to cart</p>
+                                        <div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-search-space.png" alt=""/>
+                                            </div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-heart.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product related__item swiper-slide">
+                            <div class="product__image-wrapper">
+                                <img class="product__image" src="./img/product-4.jpg" alt=""/>
+                            </div>
+                            <div class="product__text-content">
+                                <div class="product__modificator best">
+                                    best seller
+                                </div>                                    
+                                <h4 class="product__title">
+                                    Backpack with contrasting buckle
+                                </h4>
+                                <div class="product__control">
+                                    <p class="product__price">$80.00 - $125.00</p>
+                                    <div class="product__cart">
+                                        <p>Add to cart</p>
+                                        <div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-search-space.png" alt=""/>
+                                            </div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-heart.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product related__item swiper-slide">
+                            <div class="product__image-wrapper">
+                                <img class="product__image" src="./img/product-1.jpg" alt=""/>
+                            </div>
+                            <div class="product__text-content">
+                                <div class="product__modificator new">
+                                    new
+                                </div>
+                                <h4 class="product__title">
+                                    Eye Mesh Boat Shoes
+                                </h4>
+                                <div class="product__control">
+                                    <p class="product__price">$220.00</p>
+                                    <div class="product__cart">
+                                        <p>Add to cart</p>
+                                        <div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-search-space.png" alt=""/>
+                                            </div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-heart.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product related__item swiper-slide">
+                            <div class="product__image-wrapper">
+                                <img class="product__image" src="./img/product-2.jpg" alt=""/>
+                            </div>
+                            <div class="product__text-content">
+                                <h4 class="product__title">
+                                    Azure Tote
+                                </h4>
+                                <div class="product__control">
+                                    <p class="product__price">$290.00</p>
+                                    <div class="product__cart">
+                                        <p>Add to cart</p>
+                                        <div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-search-space.png" alt=""/>
+                                            </div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-heart.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product related__item swiper-slide">
+                            <div class="product__image-wrapper">
+                                <img class="product__image" src="./img/product-3.jpg" alt=""/>
+                            </div>
+                            <div class="product__text-content">
+                                <h4 class="product__title">
+                                    Blue Raincoat
+                                </h4>
+                                <div class="product__control">
+                                    <p class="product__price">$430.00</p>
+                                    <div class="product__cart">
+                                        <p>Add to cart</p>
+                                        <div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-search-space.png" alt=""/>
+                                            </div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-heart.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product related__item swiper-slide">
+                            <div class="product__image-wrapper">
+                                <img class="product__image" src="./img/product-4.jpg" alt=""/>
+                            </div>
+                            <div class="product__text-content">
+                                <div class="product__modificator best">
+                                    best seller
+                                </div>                                    
+                                <h4 class="product__title">
+                                    Backpack with contrasting buckle
+                                </h4>
+                                <div class="product__control">
+                                    <p class="product__price">$80.00 - $125.00</p>
+                                    <div class="product__cart">
+                                        <p>Add to cart</p>
+                                        <div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-search-space.png" alt=""/>
+                                            </div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-heart.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product related__item swiper-slide">
+                            <div class="product__image-wrapper">
+                                <img class="product__image" src="./img/product-3.jpg" alt=""/>
+                            </div>
+                            <div class="product__text-content">
+                                <h4 class="product__title">
+                                    Blue Raincoat
+                                </h4>
+                                <div class="product__control">
+                                    <p class="product__price">$430.00</p>
+                                    <div class="product__cart">
+                                        <p>Add to cart</p>
+                                        <div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-search-space.png" alt=""/>
+                                            </div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-heart.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product related__item swiper-slide">
+                            <div class="product__image-wrapper">
+                                <img class="product__image" src="./img/product-4.jpg" alt=""/>
+                            </div>
+                            <div class="product__text-content">
+                                <div class="product__modificator best">
+                                    best seller
+                                </div>                                    
+                                <h4 class="product__title">
+                                    Backpack with contrasting buckle
+                                </h4>
+                                <div class="product__control">
+                                    <p class="product__price">$80.00 - $125.00</p>
+                                    <div class="product__cart">
+                                        <p>Add to cart</p>
+                                        <div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-search-space.png" alt=""/>
+                                            </div>
+                                            <div class="product__c-icon">
+                                                <img src="./img/kz-heart.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <ul class="related__dots">
+                        <li class="related__dot"></li>
+                        <li class="related__dot related__dot--active"></li>
+                        <li class="related__dot"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer footer--diff">
+        <div class="container container--norm">
+            <div class="footer__top">
+                <ul class="social">
+                    <li class="social__link">
+                        <a href="#" aria-label="link to twitter"
+                            ><img src="./img/kz-twitter.png" alt=""
+                        /></a>
+                    </li>
+                    <li class="social__link">
+                        <a href="#" aria-label="link to facebook"
+                            ><img src="./img/kz-facebook.png" alt=""
+                        /></a>
+                    </li>
+                    <li class="social__link">
+                        <a href="#" aria-label="link to instagram"
+                            ><img src="./img/kz-instagram.png" alt=""
+                        /></a>
+                    </li>
+                    <li class="social__link">
+                        <a href="#" aria-label="link to pintrest"
+                            ><img src="./img/kz-pinterest.png" alt=""
+                        /></a>
+                    </li>
+                </ul>
+                <ul class="footer__links">
+                    <li class="footer__link">
+                        <a href="#">Returns Policy</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+                <div class="footer__controls">
+                    <div class="footer__dropdown-wrapper">
+                        <span>Currency</span>
+                        <div class="dropdown footer__dropdown">
+                            <button class="dropdown__header">
+                                <span class="dropdown__chosen">Usd</span>
+                                <svg>
+                                    <use xlink:href='img/sprite.svg#angle-arrow-down'></use>
+                                </svg>
+                            </button>
+                            <ul class="dropdown__content">
+                                <li class="dropdown__item">usd</li>
+                                <li class="dropdown__item">eur</li>
+                                <li class="dropdown__item">yen</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__dropdown-wrapper">
+                        <span>Language</span>
+                        <div class="dropdown footer__dropdown">
+                            <button class="dropdown__header">
+                                <span class="dropdown__chosen">English</span>
+                                <svg>
+                                    <use xlink:href='img/sprite.svg#angle-arrow-down'></use>
+                                </svg>
+                            </button>
+                            <ul class="dropdown__content">
+                                <li class="dropdown__item">English</li>
+                                <li class="dropdown__item">Arabic</li>
+                                <li class="dropdown__item">Tatar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__down">
+                <div class="footer__policy">@2019 Zonex All rights reserved</div>
+                <ul class="footer__payment-mds">
+                    <li class="footer__payment footer__payment--mc">
+                        <img src="./img/mc.png" alt="">
+                    </li>
+                    <li class="footer__payment footer__payment--visa">
+                        <img src="./img/visa.png" alt="">
+                    </li>
+                    <li class="footer__payment footer__payment--pp">
+                        <img src="./img/ppl.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="popup">
+        <div class="popup__img-wrapper">
+            <img class="popup__img" src="./img/coat.jpg" alt="" />
+        </div>
+        <div class="popup__text-content">
+            <p class="popup__subtitle">Someone purchaed a</p>
+            <h3 class="popup__title">
+                Faux shearling double-breasted coat
+            </h3>
+            <p class="popup__subtitle--italic">
+                15 minutes ago London, <br />
+                Great Britain
+            </p>
+        </div>
+        <button class="popup__icon popup__close btn--reset" aria-label="close popup">
+            <svg class="sprite">
+                <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <button class="popup__icon popup__eye btn--reset" aria-label="hide popup">
+            <svg class="sprite">
+                <use xlink:href="img/sprite.svg#eye"></use>
+            </svg>
+        </button>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Eye Mesh Boat Shoes",
+        "price": "220.00",
+        "image": "./img/product-1.jpg"
+    },
+    {
+        "title": "Azure Tote",
+        "price": "290.00",
+        "image": "./img/product-2.jpg"
+    },
+    {
+        "title": "Blue Raincoat",
+        "price": "430.00",
+        "image": "./img/product-3.jpg"
+    },
+    {
+        "title": "Backpack with contrasting buckle",
+        "price": "80.00",
+        "image": "./img/product-4.jpg"
+    },
+    {
+        "title": "Shirt in organic cotton classic gingham",
+        "price": "59.90",
+        "image": "./img/product-5.jpg"
+    }
+]
