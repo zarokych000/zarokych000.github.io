@@ -45,7 +45,6 @@
 <link rel="stylesheet" href="http://www.master-sauna.ru/assets/components/minishop2/css/web/default.css?v=d62e73368c" type="text/css" />
 <script type="text/javascript">miniShop2Config = {"cssUrl":"\/assets\/components\/minishop2\/css\/web\/","jsUrl":"\/assets\/components\/minishop2\/js\/web\/","actionUrl":"\/assets\/components\/minishop2\/action.php","ctx":"web","close_all_message":"\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435","price_format":[2,"."," "],"price_format_no_zeros":true,"weight_format":[3,"."," "],"weight_format_no_zeros":true};</script>
 <link rel="stylesheet" href="http://www.master-sauna.ru/assets/components/ajaxform/css/default.css" type="text/css" />
-<script src="https://www.google.com/recaptcha/api.js?onload=ReCaptchaCallbackV3&render=6LeKbecZAAAAAHh8w-RVNSvlLSngCBUuIYJE33ej" async></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./css/style.min.css">
@@ -1842,20 +1841,6 @@
 <script type="text/javascript">AjaxForm.initialize({"assetsUrl":"\/assets\/components\/ajaxform\/","actionUrl":"\/assets\/components\/ajaxform\/action.php","closeMessage":"\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435","formSelector":"form.ajax_form","pageId":17262});</script>
 
         <script>
-            var ReCaptchaCallbackV3 = function() {
-                grecaptcha.ready(function() {
-                    grecaptcha.reset = grecaptchaExecute;
-                    grecaptcha.reset();
-                });
-            };
-            function grecaptchaExecute() {
-                grecaptcha.execute("6LeKbecZAAAAAHh8w-RVNSvlLSngCBUuIYJE33ej", { action: "contactform" }).then(function(token) {
-                    var fieldsToken = document.querySelectorAll("[name ='g-recaptcha-response']");
-                    Array.prototype.forEach.call(fieldsToken, function(el, i){
-                        el.value = token;
-                    });
-                });
-            };
         </script>
     
 </body>
