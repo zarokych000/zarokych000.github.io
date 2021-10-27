@@ -1574,7 +1574,8 @@ body {
   font-family: "Muller", sans-serif;
   width: 100%;
   height: 100%;
-  overflow-anchor: none; }
+  overflow-anchor: none;
+  scroll-behavior: smooth; }
 
 ul,
 ol {
@@ -2053,7 +2054,8 @@ a {
         padding: 50px 20px; } }
   .sauna-tabs__gallery-item {
     position: absolute;
-    left: -3400px;
+    left: -4500px;
+    top: 0;
     opacity: 0;
     transition: opacity 0.7s ease-in 0.1s; }
     .sauna-tabs__gallery-item.active {
@@ -2062,8 +2064,6 @@ a {
       visibility: visible;
       opacity: 1;
       left: 0; }
-      .sauna-tabs__gallery-item.active .sauna-gallery__preview {
-        opacity: 1; }
       .sauna-tabs__gallery-item.active .sauna-gallery__thumbs .sauna-gallery__slide {
         opacity: 1;
         transform: translateY(0); }
@@ -2227,9 +2227,7 @@ a {
       margin: 0 auto; } }
   .sauna-gallery__preview {
     width: 656px;
-    height: 420px;
-    opacity: 0;
-    transition: opacity 0.25s linear 0.45s; }
+    height: 420px; }
     @media (max-width: 1200px) {
       .sauna-gallery__preview {
         width: 420px;
@@ -2329,10 +2327,8 @@ a {
 
 .sauna-chose {
   padding-top: 80px;
+  padding-bottom: 100px;
   background: #faf9f7; }
-  @media (max-width: 768px) {
-    .sauna-chose {
-      padding-bottom: 100px; } }
   @media (max-width: 425px) {
     .sauna-chose {
       padding-top: 40px;
@@ -2345,6 +2341,13 @@ a {
   .sauna-chose__slider-wrapper {
     position: relative; }
   .sauna-chose__slider {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
     margin-top: 35px;
     max-width: calc(100% - 130px);
     width: 100%; }
@@ -2372,10 +2375,7 @@ a {
       right: 0; }
   .sauna-chose__slider {
     position: relative;
-    padding-bottom: 112px; }
-    @media (max-width: 768px) {
-      .sauna-chose__slider {
-        padding-bottom: 0; } }
+    padding-bottom: 0; }
   .sauna-chose__item {
     position: relative;
     display: flex;
@@ -2445,6 +2445,7 @@ a {
 .sauna-size {
   position: absolute;
   top: 0;
+  z-index: 10;
   width: 100%;
   transform: translateY(-100%);
   display: flex;
@@ -2467,6 +2468,8 @@ a {
     top: 60px;
     left: -92px;
     transform: rotate(270deg); }
+    .sauna-size--height span {
+      padding-right: 3px; }
     @media (max-width: 1200px) {
       .sauna-size--height {
         top: 59px;
@@ -2600,6 +2603,10 @@ a {
         display: block; }
       .estimate__control.active::before {
         display: block; }
+    .estimate__control--hide {
+      color: #d1d1d1; }
+      .estimate__control--hide:not(.estimate__control--hide.active):hover {
+        color: #d1d1d1; }
     @media (max-width: 992px) {
       .estimate__control:not(:first-of-type) {
         margin: 0; }
@@ -2642,13 +2649,20 @@ a {
     font-weight: 400;
     color: #ca121e;
     transition: opacity 0.25s ease; }
+    .estimate__show-estim span:nth-child(1) {
+      display: inline-block; }
+    .estimate__show-estim span:nth-child(2) {
+      display: none; }
     .estimate__show-estim:hover {
       opacity: 0.8; }
-    .estimate__show-estim--disable {
-      color: #d1d1d1;
-      border-color: #d1d1d1; }
-      .estimate__show-estim--disable:hover {
-        opacity: 1; }
+    .estimate__show-estim--disable span:nth-child(1) {
+      display: none; }
+    .estimate__show-estim--disable span:nth-child(2) {
+      display: inline-block; }
+    .estimate__show-estim--disable:hover {
+      opacity: 1; }
+    .estimate__show-estim--hide {
+      display: none; }
     @media (max-width: 992px) {
       .estimate__show-estim {
         margin: 0; } }
@@ -2727,7 +2741,8 @@ a {
         padding: 18px 25px 15px; } }
   .estimate__assembly {
     margin-top: 80px;
-    display: flex; }
+    display: flex;
+    justify-content: space-between; }
     @media (max-width: 992px) {
       .estimate__assembly {
         align-items: center;
@@ -2736,9 +2751,12 @@ a {
       .estimate__assembly {
         flex-direction: column; } }
   .estimate__option {
-    flex: 1; }
-    .estimate__option:first-of-type {
-      margin-right: calc(80 * 100vw / 768); }
+    max-width: 480px; }
+    @media (max-width: 1500px) {
+      .estimate__option {
+        flex: 1; }
+        .estimate__option:first-of-type {
+          margin-right: calc(80 * 100vw / 768); } }
     @media (max-width: 600px) {
       .estimate__option:first-of-type {
         margin-right: 20px; } }
@@ -2848,6 +2866,13 @@ a {
       .sauna-our-works .container {
         padding: 0 20px; } }
   .sauna-our-works__slider {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
     margin-top: 50px;
     padding-bottom: 33px; }
     @media (max-width: 425px) {
@@ -3089,4 +3114,11 @@ a {
       margin-top: 35px;
       font-size: 12px; } }
 
-/*# sourceMappingURL=style.min.css.map */
+.sauna-form__hidden-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden; }
+
+/*# sourceMappingURL=style.css.map */
