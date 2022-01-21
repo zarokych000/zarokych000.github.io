@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Razoom</title>
+</head>
+<body>
+    <div class="screen">
+        <div class="triangles">
+            <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 70px; --tRotate: rotate(8.43deg); --tTop: 24.72%; --tLeft: 20.36%; --tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+            </svg>
+            <svg class="triangles__item" style="--tWidth: 61px; --tHeight: 65px; --tRotate: rotate(-40.9deg); --tTop: 38.43%; --tLeft: 9.06%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 94px; --tHeight: 104px; --tRotate: rotate(55.31deg); --tTop: 70.20%; --tLeft: 11.77%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 55px; --tRotate: rotate(-151.63deg); --tTop: 52.78%; --tLeft: 16.82%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 41px; --tHeight: 45px; --tRotate: rotate(55.31deg); --tTop: 32.87%; --tLeft: 29.84%;--tBlur: blur(0.6px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(-21.01deg); --tTop: 55%; --tLeft: 28.54%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 46px; --tHeight: 48px; --tRotate: rotate(-15deg); --tTop: 24%; --tLeft: 38.7%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 35px; --tHeight: 39px; --tRotate: rotate(81.25deg); --tTop: 54.17%; --tLeft: 37.92%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 27px; --tHeight: 45px; --tRotate: rotate(2.53deg); --tTop: 61.02%; --tLeft: 35.63%;--tBlur: blur(1px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 23px; --tHeight: 25px; --tRotate: rotate(49.41deg); --tTop: 71.39%; --tLeft: 37.66%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 42px; --tHeight: 69px; --tRotate: rotate(34.37deg); --tTop: 32.31%; --tLeft: 44.58%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 47px; --tHeight: 52px; --tRotate: rotate(-134.06deg); --tTop: 47.41%; --tLeft: 44.17%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 32px; --tHeight: 32px; --tRotate: rotate(-26.92deg); --tTop: 61.3%; --tLeft: 43.54%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 36px; --tHeight: 41px; --tRotate: rotate(-165.9deg); --tTop: 72.96%; --tLeft: 45.83%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(4.92deg); --tTop: 39.54%; --tLeft: 51.77%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 33px; --tHeight: 33px; --tRotate: rotate(127.14deg); --tTop: 50.93%; --tLeft: 51.82%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 27px; --tHeight: 30px; --tRotate: rotate(-156.53deg); --tTop: 58.24%; --tLeft: 51.77%;--tBlur: blur(0.4px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 41px; --tHeight: 46px; --tRotate: rotate(-124.69deg); --tTop: 44.17%; --tLeft: 57.81%;--tBlur: blur(0.6px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 33px; --tHeight: 33px; --tRotate: rotate(127.14deg); --tTop: 59.44%; --tLeft: 60.01%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(159deg); --tTop: 33.52%; --tLeft: 65.16%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 89px; --tHeight: 84px; --tRotate: rotate(20deg); --tTop: 18.15%; --tLeft: 69.11%;--tBlur: blur(2.3px)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 55px; --tRotate: rotate(20deg); --tTop: 31.48%; --tLeft: 73.28%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 70px; --tRotate: rotate(-171deg); --tTop: 61%; --tLeft: 73.3%;--tBlur: blur(2.3px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 102px; --tHeight: 112px; --tRotate: rotate(-156deg); --tTop: 70.20%; --tLeft: 70.63%;--tBlur: blur(3px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 95px; --tHeight: 104px; --tRotate: rotate(-124deg); --tTop: 34.35%; --tLeft: 77.66%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 94px; --tHeight: 115px; --tRotate: rotate(-46deg); --tTop: 16.40%; --tLeft: 85.21%;--tBlur: blur(1.4px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 62px; --tHeight: 66px; --tRotate: rotate(139deg); --tTop: 51.48%; --tLeft: 85.21%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+        </div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(67, 156, 203, 0.2) 0%, rgba(6, 76, 114, 0) 95%)" class="glow"></div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(89, 198, 255, 0.04) 0%, rgba(6, 76, 114, 0) 100%);" class="glow glow--right"></div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(89, 198, 255, 0.01) 0%, rgba(6, 76, 114, 0) 15%);" class="glow"></div>
+        <div class="screen__content container">
+            <header class="header">
+                <div class="header__content">
+                    <a class="logo header__logo" href="/">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                    <nav class="header__nav">
+                        <a class="header__link" href="#">Инвесторам</a>
+                        <a class="header__link header__link--framed" href="#">Связаться с нами</a>
+                    </nav>
+                </div>
+            </header>
+            <section class="hero">
+                <div class="hero__slider-wrapper">
+                    <div class="hero-slider hero__slider">
+                        <div class="hero-slider__slides">
+                            <div class="hero-slider__slide">
+                                <div class="hero-slider__text-content">
+                                    <h2 class="hero-slider__title">
+                                        <strong>Ум</strong>
+                                        <span>— умение выявить потребности в масштабе всего человечества.</span>
+                                    </h2>
+                                </div>
+                                <div class="hero-slider__img">
+                                    <img src="./img/mozg.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="hero-slider__pagination">
+                            <li class="hero-slider__dot hero-slider__dot--active">
+                                <button class="sr-only">slide 1</button>
+                            </li>
+                            <li class="hero-slider__dot">
+                                <button class="sr-only">slide 1</button>
+                            </li class="hero-slider__dot">
+                            <li class="hero-slider__dot">
+                                <button class="sr-only">slide 1</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="link hero__link" href="#" style="--link-glow: #5DCEFF">
+                    <span class="link__cross">
+                        <span class="link__bar link__bar--hrz"></span>
+                        <span class="link__bar link__bar--vrl"></span>
+                    </span>
+                    <span class="link__text">Филоссофия проекта</span>
+                </a>
+            </section>
+        </div>
+    </div>
+    <section class="screen our-cases our-cases--cryptemper">
+        <div class="triangles">
+            <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 70px; --tRotate: rotate(8.43deg); --tTop: 24.72%; --tLeft: 20.36%; --tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+            </svg>
+            <svg class="triangles__item" style="--tWidth: 61px; --tHeight: 65px; --tRotate: rotate(-40.9deg); --tTop: 38.43%; --tLeft: 9.06%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 94px; --tHeight: 104px; --tRotate: rotate(55.31deg); --tTop: 70.20%; --tLeft: 11.77%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 55px; --tRotate: rotate(-151.63deg); --tTop: 52.78%; --tLeft: 16.82%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 41px; --tHeight: 45px; --tRotate: rotate(55.31deg); --tTop: 32.87%; --tLeft: 29.84%;--tBlur: blur(0.6px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(-21.01deg); --tTop: 55%; --tLeft: 28.54%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 46px; --tHeight: 48px; --tRotate: rotate(-15deg); --tTop: 24%; --tLeft: 38.7%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 35px; --tHeight: 39px; --tRotate: rotate(81.25deg); --tTop: 54.17%; --tLeft: 37.92%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 27px; --tHeight: 45px; --tRotate: rotate(2.53deg); --tTop: 61.02%; --tLeft: 35.63%;--tBlur: blur(1px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 23px; --tHeight: 25px; --tRotate: rotate(49.41deg); --tTop: 71.39%; --tLeft: 37.66%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 42px; --tHeight: 69px; --tRotate: rotate(34.37deg); --tTop: 32.31%; --tLeft: 44.58%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 47px; --tHeight: 52px; --tRotate: rotate(-134.06deg); --tTop: 47.41%; --tLeft: 44.17%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 32px; --tHeight: 32px; --tRotate: rotate(-26.92deg); --tTop: 61.3%; --tLeft: 43.54%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 36px; --tHeight: 41px; --tRotate: rotate(-165.9deg); --tTop: 72.96%; --tLeft: 45.83%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(4.92deg); --tTop: 39.54%; --tLeft: 51.77%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 33px; --tHeight: 33px; --tRotate: rotate(127.14deg); --tTop: 50.93%; --tLeft: 51.82%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 27px; --tHeight: 30px; --tRotate: rotate(-156.53deg); --tTop: 58.24%; --tLeft: 51.77%;--tBlur: blur(0.4px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 41px; --tHeight: 46px; --tRotate: rotate(-124.69deg); --tTop: 44.17%; --tLeft: 57.81%;--tBlur: blur(0.6px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 33px; --tHeight: 33px; --tRotate: rotate(127.14deg); --tTop: 59.44%; --tLeft: 60.01%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(159deg); --tTop: 33.52%; --tLeft: 65.16%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 89px; --tHeight: 84px; --tRotate: rotate(20deg); --tTop: 18.15%; --tLeft: 69.11%;--tBlur: blur(2.3px)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 55px; --tRotate: rotate(20deg); --tTop: 31.48%; --tLeft: 73.28%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 70px; --tRotate: rotate(-171deg); --tTop: 61%; --tLeft: 73.3%;--tBlur: blur(2.3px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 102px; --tHeight: 112px; --tRotate: rotate(-156deg); --tTop: 70.20%; --tLeft: 70.63%;--tBlur: blur(3px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 95px; --tHeight: 104px; --tRotate: rotate(-124deg); --tTop: 34.35%; --tLeft: 77.66%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 94px; --tHeight: 115px; --tRotate: rotate(-46deg); --tTop: 16.40%; --tLeft: 85.21%;--tBlur: blur(1.4px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 62px; --tHeight: 66px; --tRotate: rotate(139deg); --tTop: 51.48%; --tLeft: 85.21%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+        </div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(0, 100, 255, 0.2) 0%, rgba(6, 76, 114, 0) 85%)" class="glow"></div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(89, 198, 255, 0.04) 0%, rgba(6, 76, 114, 0) 100%);" class="glow glow--right"></div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(89, 198, 255, 0.01) 0%, rgba(6, 76, 114, 0) 15%);" class="glow"></div>
+        <div class="screen__content container">
+            <div class="our-cases__content">
+                <div class="our-cases__text-content">
+                    <h2 class="title our-cases__title">
+                        Наши кейсы
+                    </h2>
+                    <p class="text our-cases__descr">
+                        Инструмент трейдера — это не интерфейс биржи или брокера, а знания. Знания — это наполненная смыслом информация. Полезными становятся те знания, которые можно применить в извлечении выгоды. Применить же инвестор может лишь те знания, что он получил своевременно. 
+                    </p>
+                    <a class="link link--underlined hero__link" href="#" style="--link-glow: #0064FF">
+                        <span class="link__cross">
+                            <span class="link__bar link__bar--hrz"></span>
+                            <span class="link__bar link__bar--vrl"></span>
+                        </span>
+                        <span class="link__text">Полный кейс</span>
+                    </a>
+                </div>
+                <figure class="our-cases__figure">
+                    <img class="our-cases__img" src="./img/cryptemper.svg" alt="">
+                    <figcaption class="our-cases__figcaption">Cryptemper</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="screen our-cases our-cases--twinby">
+        <div class="triangles">
+            <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 70px; --tRotate: rotate(8.43deg); --tTop: 24.72%; --tLeft: 20.36%; --tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+            </svg>
+            <svg class="triangles__item" style="--tWidth: 61px; --tHeight: 65px; --tRotate: rotate(-40.9deg); --tTop: 38.43%; --tLeft: 9.06%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 94px; --tHeight: 104px; --tRotate: rotate(55.31deg); --tTop: 70.20%; --tLeft: 11.77%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 55px; --tRotate: rotate(-151.63deg); --tTop: 52.78%; --tLeft: 16.82%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 41px; --tHeight: 45px; --tRotate: rotate(55.31deg); --tTop: 32.87%; --tLeft: 29.84%;--tBlur: blur(0.6px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(-21.01deg); --tTop: 55%; --tLeft: 28.54%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 46px; --tHeight: 48px; --tRotate: rotate(-15deg); --tTop: 24%; --tLeft: 38.7%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 35px; --tHeight: 39px; --tRotate: rotate(81.25deg); --tTop: 54.17%; --tLeft: 37.92%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 27px; --tHeight: 45px; --tRotate: rotate(2.53deg); --tTop: 61.02%; --tLeft: 35.63%;--tBlur: blur(1px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 23px; --tHeight: 25px; --tRotate: rotate(49.41deg); --tTop: 71.39%; --tLeft: 37.66%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 42px; --tHeight: 69px; --tRotate: rotate(34.37deg); --tTop: 32.31%; --tLeft: 44.58%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 47px; --tHeight: 52px; --tRotate: rotate(-134.06deg); --tTop: 47.41%; --tLeft: 44.17%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 32px; --tHeight: 32px; --tRotate: rotate(-26.92deg); --tTop: 61.3%; --tLeft: 43.54%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 36px; --tHeight: 41px; --tRotate: rotate(-165.9deg); --tTop: 72.96%; --tLeft: 45.83%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(4.92deg); --tTop: 39.54%; --tLeft: 51.77%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 33px; --tHeight: 33px; --tRotate: rotate(127.14deg); --tTop: 50.93%; --tLeft: 51.82%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 27px; --tHeight: 30px; --tRotate: rotate(-156.53deg); --tTop: 58.24%; --tLeft: 51.77%;--tBlur: blur(0.4px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 41px; --tHeight: 46px; --tRotate: rotate(-124.69deg); --tTop: 44.17%; --tLeft: 57.81%;--tBlur: blur(0.6px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 33px; --tHeight: 33px; --tRotate: rotate(127.14deg); --tTop: 59.44%; --tLeft: 60.01%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(159deg); --tTop: 33.52%; --tLeft: 65.16%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 89px; --tHeight: 84px; --tRotate: rotate(20deg); --tTop: 18.15%; --tLeft: 69.11%;--tBlur: blur(2.3px)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 55px; --tRotate: rotate(20deg); --tTop: 31.48%; --tLeft: 73.28%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 70px; --tRotate: rotate(-171deg); --tTop: 61%; --tLeft: 73.3%;--tBlur: blur(2.3px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 102px; --tHeight: 112px; --tRotate: rotate(-156deg); --tTop: 70.20%; --tLeft: 70.63%;--tBlur: blur(3px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 95px; --tHeight: 104px; --tRotate: rotate(-124deg); --tTop: 34.35%; --tLeft: 77.66%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 94px; --tHeight: 115px; --tRotate: rotate(-46deg); --tTop: 16.40%; --tLeft: 85.21%;--tBlur: blur(1.4px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 62px; --tHeight: 66px; --tRotate: rotate(139deg); --tTop: 51.48%; --tLeft: 85.21%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+        </div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(68, 255, 120, 0.1) 0%, rgba(6, 76, 114, 0) 75%)" class="glow"></div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(89, 198, 255, 0.04) 0%, rgba(6, 76, 114, 0) 100%);" class="glow glow--right"></div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(89, 198, 255, 0.01) 0%, rgba(6, 76, 114, 0) 15%);" class="glow"></div>
+        <div class="screen__content container">
+            <div class="our-cases__content">
+                <div class="our-cases__text-content">
+                    <h2 class="title our-cases__title">
+                        Наши кейсы
+                    </h2>
+                    <p class="text our-cases__descr">
+                        Мы могли использовать созданные нами самые совершенные нейросети, чтобы создать самый продвинутый и успешный сервис онлайн-дейтинга, но мы создали нечто большее — мы создали Twinby.
+                    </p>
+                    <a class="link link--underlined hero__link" href="#" style="--link-glow: #44FF78">
+                        <span class="link__cross">
+                            <span class="link__bar link__bar--hrz"></span>
+                            <span class="link__bar link__bar--vrl"></span>
+                        </span>
+                        <span class="link__text">Полный кейс</span>
+                    </a>
+                </div>
+                <figure class="our-cases__figure">
+                    <img src="./img/twinby.svg" alt="">
+                    <figcaption class="our-cases__figcaption">Twinby</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="screen for-investors">
+        <div class="triangles">
+            <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 70px; --tRotate: rotate(8.43deg); --tTop: 24.72%; --tLeft: 20.36%; --tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+            </svg>
+            <svg class="triangles__item" style="--tWidth: 61px; --tHeight: 65px; --tRotate: rotate(-40.9deg); --tTop: 38.43%; --tLeft: 9.06%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 94px; --tHeight: 104px; --tRotate: rotate(55.31deg); --tTop: 70.20%; --tLeft: 11.77%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 55px; --tRotate: rotate(-151.63deg); --tTop: 52.78%; --tLeft: 16.82%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 41px; --tHeight: 45px; --tRotate: rotate(55.31deg); --tTop: 32.87%; --tLeft: 29.84%;--tBlur: blur(0.6px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(-21.01deg); --tTop: 55%; --tLeft: 28.54%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 46px; --tHeight: 48px; --tRotate: rotate(-15deg); --tTop: 24%; --tLeft: 38.7%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 35px; --tHeight: 39px; --tRotate: rotate(81.25deg); --tTop: 54.17%; --tLeft: 37.92%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 27px; --tHeight: 45px; --tRotate: rotate(2.53deg); --tTop: 61.02%; --tLeft: 35.63%;--tBlur: blur(1px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 23px; --tHeight: 25px; --tRotate: rotate(49.41deg); --tTop: 71.39%; --tLeft: 37.66%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 42px; --tHeight: 69px; --tRotate: rotate(34.37deg); --tTop: 32.31%; --tLeft: 44.58%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 47px; --tHeight: 52px; --tRotate: rotate(-134.06deg); --tTop: 47.41%; --tLeft: 44.17%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 32px; --tHeight: 32px; --tRotate: rotate(-26.92deg); --tTop: 61.3%; --tLeft: 43.54%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 36px; --tHeight: 41px; --tRotate: rotate(-165.9deg); --tTop: 72.96%; --tLeft: 45.83%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(4.92deg); --tTop: 39.54%; --tLeft: 51.77%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 33px; --tHeight: 33px; --tRotate: rotate(127.14deg); --tTop: 50.93%; --tLeft: 51.82%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 27px; --tHeight: 30px; --tRotate: rotate(-156.53deg); --tTop: 58.24%; --tLeft: 51.77%;--tBlur: blur(0.4px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 41px; --tHeight: 46px; --tRotate: rotate(-124.69deg); --tTop: 44.17%; --tLeft: 57.81%;--tBlur: blur(0.6px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 33px; --tHeight: 33px; --tRotate: rotate(127.14deg); --tTop: 59.44%; --tLeft: 60.01%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(159deg); --tTop: 33.52%; --tLeft: 65.16%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 89px; --tHeight: 84px; --tRotate: rotate(20deg); --tTop: 18.15%; --tLeft: 69.11%;--tBlur: blur(2.3px)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 55px; --tRotate: rotate(20deg); --tTop: 31.48%; --tLeft: 73.28%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 70px; --tRotate: rotate(-171deg); --tTop: 61%; --tLeft: 73.3%;--tBlur: blur(2.3px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 102px; --tHeight: 112px; --tRotate: rotate(-156deg); --tTop: 70.20%; --tLeft: 70.63%;--tBlur: blur(3px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 95px; --tHeight: 104px; --tRotate: rotate(-124deg); --tTop: 34.35%; --tLeft: 77.66%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 94px; --tHeight: 115px; --tRotate: rotate(-46deg); --tTop: 16.40%; --tLeft: 85.21%;--tBlur: blur(1.4px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 62px; --tHeight: 66px; --tRotate: rotate(139deg); --tTop: 51.48%; --tLeft: 85.21%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+        </div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(89, 198, 255, 0.2) 0%, rgba(6, 76, 114, 0) 85%)" class="glow"></div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(89, 198, 255, 0.04) 0%, rgba(6, 76, 114, 0) 100%);" class="glow glow--right"></div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(89, 198, 255, 0.01) 0%, rgba(6, 76, 114, 0) 15%);" class="glow"></div>
+        <div class="screen__content container">
+            <h2 class="title for-investors__title">Инвесторам</h2>
+            <div class="for-investors__text-content">
+                <p class="text for-investors__text">
+                    Мы не ищем инвестиций ради одной только коммерческой выгоды. Мы строим будущее, в котором технологии не просто меняют мир, ведь перемены — не самоцель, но делают человеческое бытие в мире комфортным и приятным. 
+                </p>
+                <p class="text for-investors__text">
+                    Прежде, чем предложить нам инвестиции, сотрудничество или разработку проекта, ознакомьтесь с нашими кейсами и научными статьями. Если после вы решите, что нам с вами по пути — давайте знакомиться!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="screen our-team">
+        <div class="triangles">
+            <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 70px; --tRotate: rotate(8.43deg); --tTop: 24.72%; --tLeft: 20.36%; --tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+            </svg>
+            <svg class="triangles__item" style="--tWidth: 61px; --tHeight: 65px; --tRotate: rotate(-40.9deg); --tTop: 38.43%; --tLeft: 9.06%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 94px; --tHeight: 104px; --tRotate: rotate(55.31deg); --tTop: 70.20%; --tLeft: 11.77%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 55px; --tRotate: rotate(-151.63deg); --tTop: 52.78%; --tLeft: 16.82%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 41px; --tHeight: 45px; --tRotate: rotate(55.31deg); --tTop: 32.87%; --tLeft: 29.84%;--tBlur: blur(0.6px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(-21.01deg); --tTop: 55%; --tLeft: 28.54%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 46px; --tHeight: 48px; --tRotate: rotate(-15deg); --tTop: 24%; --tLeft: 38.7%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 35px; --tHeight: 39px; --tRotate: rotate(81.25deg); --tTop: 54.17%; --tLeft: 37.92%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 27px; --tHeight: 45px; --tRotate: rotate(2.53deg); --tTop: 61.02%; --tLeft: 35.63%;--tBlur: blur(1px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 23px; --tHeight: 25px; --tRotate: rotate(49.41deg); --tTop: 71.39%; --tLeft: 37.66%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 42px; --tHeight: 69px; --tRotate: rotate(34.37deg); --tTop: 32.31%; --tLeft: 44.58%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 47px; --tHeight: 52px; --tRotate: rotate(-134.06deg); --tTop: 47.41%; --tLeft: 44.17%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 32px; --tHeight: 32px; --tRotate: rotate(-26.92deg); --tTop: 61.3%; --tLeft: 43.54%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 36px; --tHeight: 41px; --tRotate: rotate(-165.9deg); --tTop: 72.96%; --tLeft: 45.83%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(4.92deg); --tTop: 39.54%; --tLeft: 51.77%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 33px; --tHeight: 33px; --tRotate: rotate(127.14deg); --tTop: 50.93%; --tLeft: 51.82%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 27px; --tHeight: 30px; --tRotate: rotate(-156.53deg); --tTop: 58.24%; --tLeft: 51.77%;--tBlur: blur(0.4px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 41px; --tHeight: 46px; --tRotate: rotate(-124.69deg); --tTop: 44.17%; --tLeft: 57.81%;--tBlur: blur(0.6px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 33px; --tHeight: 33px; --tRotate: rotate(127.14deg); --tTop: 59.44%; --tLeft: 60.01%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(159deg); --tTop: 33.52%; --tLeft: 65.16%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 89px; --tHeight: 84px; --tRotate: rotate(20deg); --tTop: 18.15%; --tLeft: 69.11%;--tBlur: blur(2.3px)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 55px; --tRotate: rotate(20deg); --tTop: 31.48%; --tLeft: 73.28%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 70px; --tRotate: rotate(-171deg); --tTop: 61%; --tLeft: 73.3%;--tBlur: blur(2.3px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 102px; --tHeight: 112px; --tRotate: rotate(-156deg); --tTop: 70.20%; --tLeft: 70.63%;--tBlur: blur(3px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 95px; --tHeight: 104px; --tRotate: rotate(-124deg); --tTop: 34.35%; --tLeft: 77.66%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 94px; --tHeight: 115px; --tRotate: rotate(-46deg); --tTop: 16.40%; --tLeft: 85.21%;--tBlur: blur(1.4px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 62px; --tHeight: 66px; --tRotate: rotate(139deg); --tTop: 51.48%; --tLeft: 85.21%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+        </div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(89, 198, 255, 0.2) 0%, rgba(6, 76, 114, 0) 85%)" class="glow"></div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(89, 198, 255, 0.04) 0%, rgba(6, 76, 114, 0) 100%);" class="glow glow--right"></div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(89, 198, 255, 0.01) 0%, rgba(6, 76, 114, 0) 15%);" class="glow"></div>
+        <div class="screen__content container">
+            <h2 class="title our-team__title">Наша команда</h2>
+            <div class="our-team__slider-wrapper">
+                <div class="team-slider our-team__slider">
+                    <div class="team-slider__slide">
+                        <div class="team-slider__img-wrapper">
+                            <img src="./img/our-team__slide-1.jpg" alt="">
+                        </div>
+                        <div class="team-slider__text-content">
+                            <h3 class="team-slider__member">
+                                Алена Первая
+                            </h3>
+                            <span class="team-slider__position">CEO “Razoom”</span>
+                        </div>
+                    </div>
+                    <div class="team-slider__slide">
+                        <div class="team-slider__img-wrapper">
+                            <img src="./img/our-team__slide-2.jpg" alt="">
+                        </div>
+                        <div class="team-slider__text-content">
+                            <h3 class="team-slider__member">
+                                Алена Первая
+                            </h3>
+                            <span class="team-slider__position">CEO “Razoom”</span>
+                        </div>
+                    </div>
+                    <div class="team-slider__slide">
+                        <div class="team-slider__img-wrapper">
+                            <img src="./img/our-team__slide-3.jpg" alt="">
+                        </div>
+                        <div class="team-slider__text-content">
+                            <h3 class="team-slider__member">
+                                Алена Первая
+                            </h3>
+                            <span class="team-slider__position">CEO “Razoom”</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="our-team__slider-control">
+                    <button class="our-team__slider-btn our-team__slider-btn--prev">
+                        <svg>
+                            <use xlink:href='img/sprite.svg#arrow-prev'></use>
+                        </svg>
+                    </button>
+                    <button class="our-team__slider-btn our-team__slider-btn--next">
+                        <svg>
+                           <use xlink:href='img/sprite.svg#arrow-next'></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen screen--cut contact-us">
+        <div class="triangles">
+            <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 70px; --tRotate: rotate(8.43deg); --tTop: 24.72%; --tLeft: 20.36%; --tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+            </svg>
+            <svg class="triangles__item" style="--tWidth: 61px; --tHeight: 65px; --tRotate: rotate(-40.9deg); --tTop: 38.43%; --tLeft: 9.06%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 94px; --tHeight: 104px; --tRotate: rotate(55.31deg); --tTop: 70.20%; --tLeft: 11.77%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 55px; --tRotate: rotate(-151.63deg); --tTop: 52.78%; --tLeft: 16.82%;--tBlur: blur(2px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 41px; --tHeight: 45px; --tRotate: rotate(55.31deg); --tTop: 32.87%; --tLeft: 29.84%;--tBlur: blur(0.6px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(-21.01deg); --tTop: 55%; --tLeft: 28.54%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 46px; --tHeight: 48px; --tRotate: rotate(-15deg); --tTop: 24%; --tLeft: 38.7%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 35px; --tHeight: 39px; --tRotate: rotate(81.25deg); --tTop: 54.17%; --tLeft: 37.92%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 27px; --tHeight: 45px; --tRotate: rotate(2.53deg); --tTop: 61.02%; --tLeft: 35.63%;--tBlur: blur(1px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 23px; --tHeight: 25px; --tRotate: rotate(49.41deg); --tTop: 71.39%; --tLeft: 37.66%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 42px; --tHeight: 69px; --tRotate: rotate(34.37deg); --tTop: 32.31%; --tLeft: 44.58%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 47px; --tHeight: 52px; --tRotate: rotate(-134.06deg); --tTop: 47.41%; --tLeft: 44.17%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 32px; --tHeight: 32px; --tRotate: rotate(-26.92deg); --tTop: 61.3%; --tLeft: 43.54%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 36px; --tHeight: 41px; --tRotate: rotate(-165.9deg); --tTop: 72.96%; --tLeft: 45.83%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(4.92deg); --tTop: 39.54%; --tLeft: 51.77%;--tBlur: blur(0)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 33px; --tHeight: 33px; --tRotate: rotate(127.14deg); --tTop: 50.93%; --tLeft: 51.82%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 27px; --tHeight: 30px; --tRotate: rotate(-156.53deg); --tTop: 58.24%; --tLeft: 51.77%;--tBlur: blur(0.4px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 41px; --tHeight: 46px; --tRotate: rotate(-124.69deg); --tTop: 44.17%; --tLeft: 57.81%;--tBlur: blur(0.6px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 33px; --tHeight: 33px; --tRotate: rotate(127.14deg); --tTop: 59.44%; --tLeft: 60.01%;--tBlur: blur(0.8px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 50px; --tRotate: rotate(159deg); --tTop: 33.52%; --tLeft: 65.16%;--tBlur: blur(1.3px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 89px; --tHeight: 84px; --tRotate: rotate(20deg); --tTop: 18.15%; --tLeft: 69.11%;--tBlur: blur(2.3px)">
+                <use xlink:href='img/sprite.svg#orange-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 55px; --tRotate: rotate(20deg); --tTop: 31.48%; --tLeft: 73.28%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#white-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 70px; --tRotate: rotate(-171deg); --tTop: 61%; --tLeft: 73.3%;--tBlur: blur(2.3px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 102px; --tHeight: 112px; --tRotate: rotate(-156deg); --tTop: 70.20%; --tLeft: 70.63%;--tBlur: blur(3px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 95px; --tHeight: 104px; --tRotate: rotate(-124deg); --tTop: 34.35%; --tLeft: 77.66%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#purple-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 94px; --tHeight: 115px; --tRotate: rotate(-46deg); --tTop: 16.40%; --tLeft: 85.21%;--tBlur: blur(1.4px)">
+                <use xlink:href='img/sprite.svg#blue-triangle'></use>
+             </svg>
+             <svg class="triangles__item" style="--tWidth: 62px; --tHeight: 66px; --tRotate: rotate(139deg); --tTop: 51.48%; --tLeft: 85.21%;--tBlur: blur(2.4px)">
+                <use xlink:href='img/sprite.svg#yellow-triangle'></use>
+             </svg>
+        </div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(89, 198, 255, 0.2) 0%, rgba(6, 76, 114, 0) 85%)" class="glow"></div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(89, 198, 255, 0.04) 0%, rgba(6, 76, 114, 0) 100%);" class="glow glow--right"></div>
+        <div style="--bg: radial-gradient(50% 50% at 50% 50%, rgba(89, 198, 255, 0.01) 0%, rgba(6, 76, 114, 0) 15%);" class="glow"></div>
+        <div class="screen__content container">
+            <h2 class="title contact-us__title">Свяжитесь с нами</h2>
+            <form class="contact-us__form" action="#">
+                <input class="contact-us__filed" type="text" placeholder="Имя" name="name" />
+                <input class="contact-us__filed" type="tel" placeholder="Телефон" name="phone"/>
+                <input class="contact-us__filed" type="email" placeholder="Почта" name="email"/>
+                <button class="contact-us__btn" type="submit">
+                    Отправить
+                </button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__content container">
+            <small class="footer__copyright">ⓒ Razoom 2021 all rights reserved</small>
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Главная</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Кейсы</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Инвесторам</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Команда</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="socials footer__socials">
+                <li class="socials__item socials__item--fb">
+                    <a class="socials__link" href="#">
+                        <svg>
+                           <use xlink:href='img/sprite.svg#facebook'></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item socials__item--yt">
+                    <a class="socials__link" href="#">
+                        <svg>
+                           <use xlink:href='img/sprite.svg#youtube'></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item socials__item--inst">
+                    <a class="socials__link" href="#">
+                        <svg>
+                           <use xlink:href='img/sprite.svg#instagram'></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item socials__item--tw">
+                    <a class="socials__link" href="#">
+                        <svg>
+                           <use xlink:href='img/sprite.svg#twitter'></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
