@@ -12,7 +12,7 @@
     <title>Razoom</title>
 </head>
 <body>
-    <div class="screen">
+    <div class="screen screen--header">
         <div class="triangles">
             <svg class="triangles__item" style="--tWidth: 50px; --tHeight: 70px; --tRotate: rotate(8.43deg); --tTop: 24.72%; --tLeft: 20.36%; --tBlur: blur(2px)">
                 <use xlink:href='img/sprite.svg#purple-triangle'></use>
@@ -105,48 +105,62 @@
                     <a class="logo header__logo" href="/">
                         <img src="./img/logo.svg" alt="">
                     </a>
-                    <nav class="header__nav">
-                        <a class="header__link" href="#">Инвесторам</a>
-                        <a class="header__link header__link--framed" href="#">Связаться с нами</a>
-                    </nav>
+                    <button class="hamburger header__hamburger" aria-label="Open hamburger menu">
+                        <span aria-hidden="true" class="hamburger__bar"></span>
+                        <span aria-hidden="true" class="hamburger__bar"></span>
+                        <span aria-hidden="true" class="hamburger__bar"></span>
+                    </button>
+                    <div class="header__menu">
+                        <button class="close header__close" aria-label="Close hamburger menu">
+                        </button>
+                        <nav class="header__nav">
+                            <a class="header__link" href="#">Инвесторам</a>
+                            <a class="header__link header__link--framed" href="#">Связаться с нами</a>
+                        </nav>
+                    </div>
                 </div>
             </header>
             <section class="hero">
-                <div class="hero__slider-wrapper">
-                    <div class="hero-slider hero__slider">
-                        <div class="hero-slider__slides">
+                <div class="hero__text-content">
+                    <div class="hero__slider-wrapper">
+                        <div class="hero-slider hero__slider">
                             <div class="hero-slider__slide">
-                                <div class="hero-slider__text-content">
+                                <div class="hero-slider__content">
                                     <h2 class="hero-slider__title">
                                         <strong>Ум</strong>
                                         <span>— умение выявить потребности в масштабе всего человечества.</span>
                                     </h2>
                                 </div>
-                                <div class="hero-slider__img">
-                                    <img src="./img/mozg.png" alt="">
+                            </div>
+                            <div class="hero-slider__slide">
+                                <div class="hero-slider__content">
+                                    <h2 class="hero-slider__title">
+                                        <strong>Ум</strong>
+                                        <span>— умение выявить потребности в масштабе всего человечества.</span>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="hero-slider__slide">
+                                <div class="hero-slider__content">
+                                    <h2 class="hero-slider__title">
+                                        <strong>Ум</strong>
+                                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae magnam itaque rem hic similique repellendus et adipisc</span>
+                                    </h2>
                                 </div>
                             </div>
                         </div>
-                        <ul class="hero-slider__pagination">
-                            <li class="hero-slider__dot hero-slider__dot--active">
-                                <button class="sr-only">slide 1</button>
-                            </li>
-                            <li class="hero-slider__dot">
-                                <button class="sr-only">slide 1</button>
-                            </li class="hero-slider__dot">
-                            <li class="hero-slider__dot">
-                                <button class="sr-only">slide 1</button>
-                            </li>
-                        </ul>
                     </div>
+                    <a class="link hero__link" href="#" style="--link-glow: #5DCEFF">
+                        <span class="link__cross">
+                            <span class="link__bar link__bar--hrz"></span>
+                            <span class="link__bar link__bar--vrl"></span>
+                        </span>
+                        <span class="link__text">Филоссофия проекта</span>
+                    </a>
                 </div>
-                <a class="link hero__link" href="#" style="--link-glow: #5DCEFF">
-                    <span class="link__cross">
-                        <span class="link__bar link__bar--hrz"></span>
-                        <span class="link__bar link__bar--vrl"></span>
-                    </span>
-                    <span class="link__text">Филоссофия проекта</span>
-                </a>
+                <div class="hero__img">
+                    <img src="./img/mozg.png" alt="">
+                </div>
             </section>
         </div>
     </div>
@@ -246,7 +260,7 @@
                     <p class="text our-cases__descr">
                         Инструмент трейдера — это не интерфейс биржи или брокера, а знания. Знания — это наполненная смыслом информация. Полезными становятся те знания, которые можно применить в извлечении выгоды. Применить же инвестор может лишь те знания, что он получил своевременно. 
                     </p>
-                    <a class="link link--underlined hero__link" href="#" style="--link-glow: #0064FF">
+                    <a class="link link--underlined our-cases__link" href="#" style="--link-glow: #0064FF">
                         <span class="link__cross">
                             <span class="link__bar link__bar--hrz"></span>
                             <span class="link__bar link__bar--vrl"></span>
@@ -357,7 +371,7 @@
                     <p class="text our-cases__descr">
                         Мы могли использовать созданные нами самые совершенные нейросети, чтобы создать самый продвинутый и успешный сервис онлайн-дейтинга, но мы создали нечто большее — мы создали Twinby.
                     </p>
-                    <a class="link link--underlined hero__link" href="#" style="--link-glow: #44FF78">
+                    <a class="link link--underlined our-cases__link" href="#" style="--link-glow: #44FF78">
                         <span class="link__cross">
                             <span class="link__bar link__bar--hrz"></span>
                             <span class="link__bar link__bar--vrl"></span>
@@ -366,7 +380,7 @@
                     </a>
                 </div>
                 <figure class="our-cases__figure">
-                    <img src="./img/twinby.svg" alt="">
+                    <img class="our-cases__img" src="./img/twinby.svg" alt="">
                     <figcaption class="our-cases__figcaption">Twinby</figcaption>
                 </figure>
             </div>
@@ -563,36 +577,42 @@
             <div class="our-team__slider-wrapper">
                 <div class="team-slider our-team__slider">
                     <div class="team-slider__slide">
-                        <div class="team-slider__img-wrapper">
-                            <img src="./img/our-team__slide-1.jpg" alt="">
-                        </div>
-                        <div class="team-slider__text-content">
-                            <h3 class="team-slider__member">
-                                Алена Первая
-                            </h3>
-                            <span class="team-slider__position">CEO “Razoom”</span>
-                        </div>
-                    </div>
-                    <div class="team-slider__slide">
-                        <div class="team-slider__img-wrapper">
-                            <img src="./img/our-team__slide-2.jpg" alt="">
-                        </div>
-                        <div class="team-slider__text-content">
-                            <h3 class="team-slider__member">
-                                Алена Первая
-                            </h3>
-                            <span class="team-slider__position">CEO “Razoom”</span>
+                        <div class="team-slider__content">
+                            <div class="team-slider__img-wrapper">
+                                <img src="./img/our-team__slide-1.jpg" alt="">
+                            </div>
+                            <div class="team-slider__text-content">
+                                <h3 class="team-slider__member">
+                                    Алена Первая
+                                </h3>
+                                <span class="team-slider__position">CEO “Razoom”</span>
+                            </div>
                         </div>
                     </div>
                     <div class="team-slider__slide">
-                        <div class="team-slider__img-wrapper">
-                            <img src="./img/our-team__slide-3.jpg" alt="">
+                        <div class="team-slider__content">
+                            <div class="team-slider__img-wrapper">
+                                <img src="./img/our-team__slide-2.jpg" alt="">
+                            </div>
+                            <div class="team-slider__text-content">
+                                <h3 class="team-slider__member">
+                                    Алена Первая
+                                </h3>
+                                <span class="team-slider__position">CEO “Razoom”</span>
+                            </div>
                         </div>
-                        <div class="team-slider__text-content">
-                            <h3 class="team-slider__member">
-                                Алена Первая
-                            </h3>
-                            <span class="team-slider__position">CEO “Razoom”</span>
+                    </div>
+                    <div class="team-slider__slide">
+                        <div class="team-slider__content">
+                            <div class="team-slider__img-wrapper">
+                                <img src="./img/our-team__slide-3.jpg" alt="">
+                            </div>
+                            <div class="team-slider__text-content">
+                                <h3 class="team-slider__member">
+                                    Алена Первая
+                                </h3>
+                                <span class="team-slider__position">CEO “Razoom”</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -712,6 +732,9 @@
     </section>
     <footer class="footer">
         <div class="footer__content container">
+            <a class="logo footer__logo" href="#">
+                <img src="./img/logo.svg" alt="">
+            </a>
             <small class="footer__copyright">ⓒ Razoom 2021 all rights reserved</small>
             <nav class="footer__nav">
                 <ul class="footer__list">
