@@ -1144,6 +1144,24 @@ a {
   }
 }
 
+@media (max-height: 700px) and (max-width: 450px) {
+  .our-cases {
+    min-height: 750px;
+  }
+}
+
+@media (max-height: 700px) and (max-width: 400px) {
+  .our-cases {
+    min-height: 800px;
+  }
+}
+
+@media (max-height: 750px) and (max-width: 400px) {
+  .our-cases {
+    min-height: 780px;
+  }
+}
+
 @media (max-width: 370px) {
   .our-cases::after {
     height: 52%;
@@ -1424,7 +1442,7 @@ a {
   .our-cases__accordion .accordion__wrapper {
     margin-top: 0;
     background: linear-gradient(360deg, #050C14 20%, rgba(0, 0, 0, 0.2) 45%, rgba(5, 12, 20, 0) 100%);
-    border: 1px solid rgba(22, 118, 170, 0.2);
+    border: none;
     overflow: initial;
     position: absolute;
     z-index: 11;
@@ -1444,6 +1462,16 @@ a {
     opacity: 0.7;
     filter: blur(9px);
   }
+  .our-cases__accordion .accordion__wrapper::before {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #050C14;
+  }
   .our-cases__accordion .accordion__content {
     position: absolute;
     z-index: 10;
@@ -1451,7 +1479,7 @@ a {
     left: 0;
     height: 100%;
     width: 100%;
-    padding: 24px 24px 100px;
+    padding: 0;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.32));
     overflow: scroll;
     mix-blend-mode: normal;
@@ -1479,6 +1507,12 @@ a {
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .our-cases__accordion[open] .accordion__content {
+    padding: 24px 24px 100px;
+  }
+  .our-cases__accordion[open] .accordion__wrapper {
+    border: 1px solid rgba(22, 118, 170, 0.2);
   }
 }
 
