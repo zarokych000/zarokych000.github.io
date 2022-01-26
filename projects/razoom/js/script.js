@@ -101,20 +101,22 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     const allLinks = document.querySelectorAll("a");
+
     $('.team-slider').slick({
         slidesToShow: 1,
         centerMode: true,
         prevArrow: ".our-team__slider-btn--prev",
         nextArrow: ".our-team__slider-btn--next",
         variableWidth: true,
+        infinite: true,
     });
+    
     $(".hero-slider").slick({
         slidesToShow: 1,
         arrows: false,
         dots: true,
         appendDots: ".hero__slider-wrapper",
         dotsClass: "hero-slider__pagination",
-        adaptiveHeight: true
     });
 
 
@@ -134,6 +136,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // smooth scroll
+
     allLinks.forEach(link => {
         link.addEventListener("click", (e) => {
             if (!e.target.dataset.scroll) {
@@ -151,6 +155,34 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    // accordion
+
+    function accordions(allTriggerSelector) {
+        const triggers = document.querySelectorAll(allTriggerSelector);
+
+        triggers.forEach((item) => {
+            item.addEventListener("click", () => {
+                const accordion = item.parentElement;
+
+                if (accordion.hasAttribute("open")) {
+                    accordion.removeAttribute("open");
+                } else {
+                    accordion.setAttribute("open", "true");
+                }
+
+                if (accordion.dataset.type === "slider-ac") {
+                    const close = accordion.querySelector(".accordion__close");
+
+                    close.addEventListener("click", () => {
+                        accordion.removeAttribute("open");
+                    });
+                }
+            });
+        });
+    }
+
+    accordions(".accordion__trigger");
 
     hamburgerMenu(".hamburger", ".header__menu", "header__menu--active", ".close");
 });
